@@ -33,7 +33,7 @@ Use [Taskbar Styler](https://windhawk.net/mods/windows-11-taskbar-styler) to ach
 The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Open the Windows 11 Settings Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
@@ -41,7 +41,7 @@ settings:
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Open the Windows 11 Settings Styler mod in Windhawk.
 * Go to the "Settings" tab and select "Textual mode".
 * Copy the content below to the text box and click "Save settings".
 

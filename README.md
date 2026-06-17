@@ -10,6 +10,8 @@
 * [Themes](#themes)
 * [General](#general)
   * [2→1 liners](#2→1-liners)
+  * [Content Region](#content-region)
+  * [Path Header Grid](#path-header-grid)
 * [Transforms](#transforms)
 * [Colors](#colors)
 
@@ -61,6 +63,7 @@ Settings Styler mod. The following themes are available:
 | ----- | ----------
 | [Densy](Themes/Densy/README.md) | [![Densy](Themes/Densy/screenshot-small.png)](Themes/Densy/screenshot.png)
 | [ClassicSearchBar](Themes/ClassicSearchBar/README.md) | [![ClassicSearchBar](Themes/ClassicSearchBar/screenshot-small.png)](Themes/ClassicSearchBar/screenshot.png)
+| [StoreFrame11](Themes/StoreFrame11/README.md) | [![ClassicSearchBar](Themes/StoreFrame11/screenshot-small.png)](Themes/StoreFrame11/screenshot.png)
 
 ## General
 
@@ -78,6 +81,7 @@ Orientation=1
 ```
 
 Then you might want to add space between the 2 text elements, and match the text size/color
+
 Target:
 ```
 ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > SystemSettings.View.EntityItem > Grid > SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent
@@ -103,6 +107,32 @@ Orientation=0
 > [!NOTE]
 > Some lists (Apps → Installed apps) crash the Settings app in a 1-line style,
 > so would require an override to revert to the 2-line style
+
+### Content Region
+
+To set a background to the content region
+
+Target:
+```
+SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid
+```
+Style:
+```
+Background=#80FF0830
+```
+
+### Path Header Grid
+
+To change the path advancing direction and alignment
+
+Target:
+```
+Grid#ContentRoot > Border > Grid#ContentGrid > ContentControl#HeaderContent
+```
+Style:
+```
+FlowDirection=1
+```
 
 ## Transforms
 
