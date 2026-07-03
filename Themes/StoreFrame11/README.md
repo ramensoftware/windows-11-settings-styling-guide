@@ -317,9 +317,14 @@ controlStyles:
   - target: Rectangle#SelectionIndicator
     styles:
       - Height=22
-  - target: Windows.UI.Xaml.Shapes.Rectangle#ThumbVisual
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost > ScrollViewer#MenuItemsScrollViewer > Border#Root > Grid > Grid > Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar > Grid#Root > Grid#VerticalRoot > Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb
     styles:
-      - Visibility=Collapsed
+      - Visibility=1
+      - AllowFocusOnInteraction=0
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost > ScrollViewer#MenuItemsScrollViewer > Border#Root > Grid > Grid > Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar > Grid#Root > Grid#VerticalRoot > Rectangle#VerticalTrackRect
+    styles:
+      - Visibility=1
+      - AllowFocusOnInteraction=0
 themeResourceVariables:
   - Overlay@Light=#55FFFFFF
   - Overlay@Dark=#09FFFFFF
