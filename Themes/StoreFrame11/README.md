@@ -22,6 +22,10 @@ This theme makes the Settings window use a frame that matches the Microsoft Stor
 - Partially modernizes the detailed storage breakdown page from its Windows 10 era styling.
 - Maintains the default behaviour of autohide sidebar overlay on smaller window sizes and screens.
 
+> [!IMPORTANT]
+> This theme is designed for Windows 11 25H2 with the Home tab enabled.  
+> For other Windows 11 versions, [use this variant](https://github.com/Nimai-HK/LayerMicaUI/blob/main/StoreFrame11-Non%2025H2/SettingsStyler.yaml).
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
