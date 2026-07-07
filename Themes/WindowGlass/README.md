@@ -14,6 +14,10 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
     - Frosted
     - Acrylic
   - In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
+- To change the app's corner radius, install the 'Custom Window Corner Radius' Mod and use the paste the following in the 'Advanced' section:
+ ```json
+{"radius":20,"smallRadius":6,"tooltipRadius":-1}
+```
 
 ## Bonus
 - This theme can style other UWP Applications as well. 
