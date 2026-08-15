@@ -50,6 +50,43 @@ theme: ''
 styleConstants:
   - ''
 controlStyles:
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
+    styles:
+      - CornerRadius=25
+      - Background=transparent
+  - target: Microsoft.ReactNative.ReactRootView > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Border
+    styles:
+      - Background=#101013
+  - target: SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter
+    styles:
+      - Background=#101013 
+  - target: ContentPresenter#ContentPresenter > Grid > Grid > TextBlock
+    styles:
+      - Foreground=white
+  - target: SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent > TextBlock
+    styles:
+      - Foreground=#ADADAE
+  - target:  Microsoft.ReactNative.ViewPanel > TextBlock
+    styles:
+      - Foreground=#ADADAE  
+  - target: ContentPresenter#SubtitleContent > TextBlock
+    styles:
+      - Foreground=#ADADAE  
+  - target: ContentPresenter#SubtitleContent > StackPanel > StackPanel > TextBlock
+    styles:
+      - Foreground=#ADADAE 
+  - target: ContentPresenter#SubtitleContent > Grid > TextBlock
+    styles:
+      - Foreground=#ADADAE 
+  - target: ContentPresenter#InlineContentPresenter > StackPanel > ContentControl > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - Foreground=white
+  - target: Button#DeviceOptionsButton > Grid > Grid > ContentPresenter#ContentPresenter > TextBlock
+    styles:
+      - Foreground=white 
+  - target: ContentPresenter#TitleContent > TextBlock
+    styles:
+      - Foreground=white
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.CategoryPage > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - CornerRadius=12
@@ -866,6 +903,43 @@ theme: ''
 styleConstants:
   - ''
 controlStyles:
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
+    styles:
+      - CornerRadius=25
+      - Background=transparent
+  - target: Microsoft.ReactNative.ReactRootView > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Border
+    styles:
+      - Background=#101013
+  - target: SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter
+    styles:
+      - Background=#101013 
+  - target: ContentPresenter#ContentPresenter > Grid > Grid > TextBlock
+    styles:
+      - Foreground=white
+  - target: SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent > TextBlock
+    styles:
+      - Foreground=#ADADAE
+  - target:  Microsoft.ReactNative.ViewPanel > TextBlock
+    styles:
+      - Foreground=#ADADAE  
+  - target: ContentPresenter#SubtitleContent > TextBlock
+    styles:
+      - Foreground=#ADADAE  
+  - target: ContentPresenter#SubtitleContent > StackPanel > StackPanel > TextBlock
+    styles:
+      - Foreground=#ADADAE 
+  - target: ContentPresenter#SubtitleContent > Grid > TextBlock
+    styles:
+      - Foreground=#ADADAE 
+  - target: ContentPresenter#InlineContentPresenter > StackPanel > ContentControl > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - Foreground=white
+  - target: Button#DeviceOptionsButton > Grid > Grid > ContentPresenter#ContentPresenter > TextBlock
+    styles:
+      - Foreground=white 
+  - target: ContentPresenter#TitleContent > TextBlock
+    styles:
+      - Foreground=white
   - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.CategoryPage > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - CornerRadius=12
