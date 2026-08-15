@@ -49,7 +49,7 @@ controlStyles:
       - Background=#101013
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
     styles:
-      - CornerRadius=25
+      - CornerRadius=15
       - Background=transparent
   - target: Microsoft.ReactNative.ReactRootView > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Border
     styles:
@@ -901,7 +901,7 @@ controlStyles:
       - Background=#101013
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
     styles:
-      - CornerRadius=25
+      - CornerRadius=15
       - Background=transparent
   - target: Microsoft.ReactNative.ReactRootView > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Microsoft.ReactNative.ViewPanel > Border
     styles:
