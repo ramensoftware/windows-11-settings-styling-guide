@@ -883,6 +883,9 @@ controlStyles:
       - CornerRadius=12
       - Foreground=White
       - BorderThickness=0
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot
+    styles:
+      - Background=Transparent
 ```
 </details>
 
@@ -1770,5 +1773,8 @@ controlStyles:
       - CornerRadius=12
       - Foreground=White
       - BorderThickness=0
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot
+    styles:
+      - Background=Transparent
 ```
 </details>
