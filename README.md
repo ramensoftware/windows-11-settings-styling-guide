@@ -59,15 +59,16 @@ share, please submit a pull request.
 Themes are collections of styles that can be imported into the Windows 11
 Settings Styler mod. The following themes are available:
 
-| Link  | Screenshot |
-| ----- | ---------- |
-| [Densy](Themes/Densy/README.md) | [![Densy](Themes/Densy/screenshot-small.png)](Themes/Densy/screenshot.png) |
-| [ClassicSearchBar](Themes/ClassicSearchBar/README.md) | [![ClassicSearchBar](Themes/ClassicSearchBar/screenshot-small.png)](Themes/ClassicSearchBar/screenshot.png) |
-| [StoreFrame11](Themes/StoreFrame11/README.md) | [![StoreFrame11](Themes/StoreFrame11/screenshot-small.png)](Themes/StoreFrame11/screenshot.png) |
-| [Blue](Themes/Blue/README.md) | [![Blue](Themes/Blue/screenshot-small.png)](Themes/Blue/screenshot.png) |
+| Link  | Screenshot
+| ----- | ----------
+| [Densy](Themes/Densy/README.md) | [![Densy](Themes/Densy/screenshot-small.png)](Themes/Densy/screenshot.png)
+| [ClassicSearchBar](Themes/ClassicSearchBar/README.md) | [![ClassicSearchBar](Themes/ClassicSearchBar/screenshot-small.png)](Themes/ClassicSearchBar/screenshot.png)
+| [StoreFrame11](Themes/StoreFrame11/README.md) | [![StoreFrame11](Themes/StoreFrame11/screenshot-small.png)](Themes/StoreFrame11/screenshot.png)
+| [Blue](Themes/Blue/README.md) | [![Blue](Themes/Blue/screenshot-small.png)](Themes/Blue/screenshot.png)
+| [Translucent Settings11](Themes/Translucent%20Settings11/README.md) | [![Blue](Themes/Translucent%20Settings11/screenshot-small.png)](Themes/Translucent%20Settings11/screenshot.png)
+| [WindowGlass](Themes/WindowGlass/README.md) | [![Blue](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [OLED Green (Modirinth)](Themes/OLED%20%28Modirinth%29/README.md) | [![OLED Green (Modirinth)](Themes/OLED%20%28Modirinth%29/screenshot-green-small.png)](Themes/OLED%20%28Modirinth%29/screenshot-green.png) |
 | [OLED (System Ascent Color)](Themes/OLED%20%28Modirinth%29/README.md) | [![OLED System Ascent Color](Themes/OLED%20%28Modirinth%29/screenshot-ascent-small.png)](Themes/OLED%20%28Modirinth%29/screenshot-ascent.png) |
-
 
 ## General
 
