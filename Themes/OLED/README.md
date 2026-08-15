@@ -56,7 +56,7 @@ controlStyles:
       - Background=#101013
   - target: SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter
     styles:
-      - Background=#101013 
+      - Background=#101013
   - target: ContentPresenter#ContentPresenter > Grid > Grid > TextBlock
     styles:
       - Foreground=white
@@ -65,25 +65,25 @@ controlStyles:
       - Foreground=#ADADAE
   - target:  Microsoft.ReactNative.ViewPanel > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > StackPanel > StackPanel > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > Grid > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#InlineContentPresenter > StackPanel > ContentControl > ContentPresenter > StackPanel > TextBlock
     styles:
       - Foreground=white
   - target: Button#DeviceOptionsButton > Grid > Grid > ContentPresenter#ContentPresenter > TextBlock
     styles:
-      - Foreground=white 
+      - Foreground=white
   - target: ContentPresenter#TitleContent > TextBlock
     styles:
-      - Foreground=white       
+      - Foreground=white
   - target: SystemSettings.View.CategoryPage > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - CornerRadius=12
@@ -908,7 +908,7 @@ controlStyles:
       - Background=#101013
   - target: SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter
     styles:
-      - Background=#101013 
+      - Background=#101013
   - target: ContentPresenter#ContentPresenter > Grid > Grid > TextBlock
     styles:
       - Foreground=white
@@ -917,25 +917,25 @@ controlStyles:
       - Foreground=#ADADAE
   - target:  Microsoft.ReactNative.ViewPanel > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > StackPanel > StackPanel > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > Grid > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#InlineContentPresenter > StackPanel > ContentControl > ContentPresenter > StackPanel > TextBlock
     styles:
       - Foreground=white
   - target: Button#DeviceOptionsButton > Grid > Grid > ContentPresenter#ContentPresenter > TextBlock
     styles:
-      - Foreground=white 
+      - Foreground=white
   - target: ContentPresenter#TitleContent > TextBlock
     styles:
-      - Foreground=white       
+      - Foreground=white
 
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
     styles:
@@ -946,7 +946,7 @@ controlStyles:
       - Background=#101013
   - target: SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter
     styles:
-      - Background=#101013 
+      - Background=#101013
   - target: ContentPresenter#ContentPresenter > Grid > Grid > TextBlock
     styles:
       - Foreground=white
@@ -955,22 +955,22 @@ controlStyles:
       - Foreground=#ADADAE
   - target:  Microsoft.ReactNative.ViewPanel > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > TextBlock
     styles:
-      - Foreground=#ADADAE  
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > StackPanel > StackPanel > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#SubtitleContent > Grid > TextBlock
     styles:
-      - Foreground=#ADADAE 
+      - Foreground=#ADADAE
   - target: ContentPresenter#InlineContentPresenter > StackPanel > ContentControl > ContentPresenter > StackPanel > TextBlock
     styles:
       - Foreground=white
   - target: Button#DeviceOptionsButton > Grid > Grid > ContentPresenter#ContentPresenter > TextBlock
     styles:
-      - Foreground=white 
+      - Foreground=white
   - target: ContentPresenter#TitleContent > TextBlock
     styles:
       - Foreground=white
