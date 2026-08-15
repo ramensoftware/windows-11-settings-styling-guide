@@ -67,8 +67,7 @@ Settings Styler mod. The following themes are available:
 | [Blue](Themes/Blue/README.md) | [![Blue](Themes/Blue/screenshot-small.png)](Themes/Blue/screenshot.png)
 | [Translucent Settings11](Themes/Translucent%20Settings11/README.md) | [![Blue](Themes/Translucent%20Settings11/screenshot-small.png)](Themes/Translucent%20Settings11/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![Blue](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
-| [OLED Green (Modirinth)](Themes/OLED%20%28Modirinth%29/README.md) | [![OLED Green (Modirinth)](Themes/OLED%20%28Modirinth%29/screenshot-green-small.png)](Themes/OLED%20%28Modirinth%29/screenshot-green.png) |
-| [OLED (System Ascent Color)](Themes/OLED%20%28Modirinth%29/README.md) | [![OLED System Ascent Color](Themes/OLED%20%28Modirinth%29/screenshot-ascent-small.png)](Themes/OLED%20%28Modirinth%29/screenshot-ascent.png) |
+| [OLED](Themes/OLED/README.md) | [![OLED](Themes/OLED/screenshot-small.png)](Themes/OLED/screenshot.png) |
 
 ## General
 

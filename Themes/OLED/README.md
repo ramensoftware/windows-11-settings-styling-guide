@@ -1,36 +1,35 @@
-# Modirinth Settings Style for Windows 11 Settings App
+# OLED theme for Windows 11 Settings Styler
 
 Author: [WasiXGamer](https://github.com/wasixgamer)
 
-This theme makes the Windows 11 Settings app look like the Modrinth(Minecraft Launcher) app. It comes in two variants: OLED Green (Modrinth), which is the default look of Modrinth, and OLED Accent Color (Modrinth), where users can change the UI color by navigating to the Windows accent color settings!
+This theme makes the Windows 11 Settings app look like the Modrinth (Minecraft Launcher) app. It comes in two variants: OLED (Modrinth Green), which is the default look of Modrinth, and OLED (System Ascent), where users can change the UI color by navigating to the Windows accent color settings!
 
-# Modirinth Green Previews
+# Modrinth Green Previews
 
-This is preview of Modirinth-like Green colour matching OLED green theme of Modirinth Minecraft launcher app.
+This is preview of Modrinth-like Green color matching OLED green theme of Modrinth Minecraft launcher app.
 
-![Green-Preview-1](screenshot-green.png)
+![Green-Preview-1](screenshot.png)
 
-![Green-Preview-2](screenshot-1-green.png)
+![Green-Preview-2](screenshot-1.png)
 
+# System Accent Color Previews
 
-# Custom Ascent Colour Previews
+The color in this variant can be customized by navigating to Windows Settings > Personalization > Colors, and choosing a desirable color.
 
-The colour in this variant can be customized by navigating to Windows Settings > Personalization > Colours, and chosing a desirable colour.
+![Accent-Preview-1](screenshot-accent.png)
 
-![Ascent-Preview-1](screenshot-ascent.png)
+![Accent-Preview-2](screenshot-1-accent.png)
 
-![Ascent-Preview-2](screenshot-1-ascent.png)
+## Theme selection
 
-
-# Theme selection
-
-The theme is integrated into the mod and can be selected directly from the mod's settings:
+The theme is integrated into the mod and can be selected directly from the mod's
+settings:
 
 * Open the Windows 11 Settings Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
-# Manual installation
+## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
@@ -38,19 +37,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Go to the "Settings" tab and select "Textual mode".
 * Copy the content below to the text box and click "Save settings".
 
-## OLED Green (Modirinth) Configuration
+## OLED (Modrinth Green)
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-
-
-theme: ''
-styleConstants:
-  - ''
 controlStyles:
   - target: ContentControl#GridViewItemContentControl > ContentPresenter > Grid
     styles:
@@ -891,23 +883,15 @@ controlStyles:
       - CornerRadius=12
       - Foreground=White
       - BorderThickness=0
-themeResourceVariables:
-  - ''
-
 ```
 </details>
 
-## OLED System Ascent Color Configuration
+## OLED (System Ascent)
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-theme: ''
-styleConstants:
-  - ''
 controlStyles:
   - target: ContentControl#GridViewItemContentControl > ContentPresenter > Grid
     styles:
@@ -1786,8 +1770,5 @@ controlStyles:
       - CornerRadius=12
       - Foreground=White
       - BorderThickness=0
-themeResourceVariables:
-  - ''
-
 ```
 </details>
