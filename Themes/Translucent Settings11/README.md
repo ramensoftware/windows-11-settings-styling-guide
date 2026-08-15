@@ -6,9 +6,18 @@ This theme makes the Settings app look Translucent. It lets you see through the 
 
 ![Screenshot](screenshot.png)
 
-## Installation
+## Theme selection
 
-To import the theme styles:
+The theme is integrated into the mod and can be selected directly from the mod's
+settings:
+
+* Open the Windows 11 Settings Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Settings Styler mod in Windhawk.
 * Go to the "Settings" tab and select "Textual mode".
