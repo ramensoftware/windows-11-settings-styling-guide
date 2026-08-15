@@ -1,6 +1,6 @@
-# WindowGlass theme for Windows 11 Start Menu Styler
+# WindowGlass theme for Windows 11 Settings Styler
 
-A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 Settings App .
+A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 Settings App.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
@@ -15,9 +15,9 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
     - Acrylic
   - In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 - To change the app's corner radius, install the 'Custom Window Corner Radius' Mod and use the paste the following in the 'Advanced' section:
- ```json
-{"radius":20,"smallRadius":6,"tooltipRadius":-1}
-```
+  ```json
+  {"radius":20,"smallRadius":6,"tooltipRadius":-1}
+  ```
 
 ## Bonus
 - This theme can style other UWP Applications as well. 
@@ -43,13 +43,11 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
 - Windows 11 Taskbar Styler - for styling the taskbar.
 - Windows 11 Notification Center Styler - for styling the Notification Center and Action Center.
 - Windows 11 File Explorer Styler - for styling Windows Explorer windows.
-- Windows 11 Start Menu Styler - for styling the Windows 11 Start Menu
-
----
+- Windows 11 Start Menu Styler - for styling the Windows 11 Start Menu.
 
 ## Theme selection
 
-The theme is integrated into the mod and can simply be selected from the mod's
+The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
 * Open the Windows 11 Settings Styler mod in Windhawk.
@@ -68,7 +66,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: ''
 styleConstants:
   - Glass=<WindhawkBlur BlurAmount="3" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
   - Frosted=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
@@ -237,17 +234,5 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
-themeResourceVariables:
-  - ''
-// Dropdown Menus//: ''
-// Media Bar//: ''
-// Popup Window//: ''
-// Popups//: ''
-// Search//: ''
-// Sidebar //: ''
-// Slider Thumbnail//: ''
-// Style Constants //: ''
-// Switches//: ''
-// Tooltips//: ''
 ```
 </details>
