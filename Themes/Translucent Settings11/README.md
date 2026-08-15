@@ -18,7 +18,6 @@ To import the theme styles:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
 styleConstants:
   - OutRadius=8
   - InRadius=12
@@ -438,7 +437,5 @@ themeResourceVariables:
   - LayerFillColorDefault@Light=#00000000
   - ApplicationPageBackgroundThemeBrush@Dark=#00000000
   - ApplicationPageBackgroundThemeBrush@Light=#00000000
-
-
 ```
 </details>
