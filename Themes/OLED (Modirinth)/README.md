@@ -52,6 +52,9 @@ theme: ''
 styleConstants:
   - ''
 controlStyles:
+  - target: ContentControl#GridViewItemContentControl > ContentPresenter > Grid
+    styles:
+      - Background=#101013
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
     styles:
       - CornerRadius=25
@@ -906,6 +909,9 @@ theme: ''
 styleConstants:
   - ''
 controlStyles:
+  - target: ContentControl#GridViewItemContentControl > ContentPresenter > Grid
+    styles:
+      - Background=#101013
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border
     styles:
       - CornerRadius=25
