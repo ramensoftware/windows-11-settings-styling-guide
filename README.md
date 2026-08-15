@@ -65,6 +65,7 @@ Settings Styler mod. The following themes are available:
 | [ClassicSearchBar](Themes/ClassicSearchBar/README.md) | [![ClassicSearchBar](Themes/ClassicSearchBar/screenshot-small.png)](Themes/ClassicSearchBar/screenshot.png)
 | [StoreFrame11](Themes/StoreFrame11/README.md) | [![StoreFrame11](Themes/StoreFrame11/screenshot-small.png)](Themes/StoreFrame11/screenshot.png)
 | [Blue](Themes/Blue/README.md) | [![Blue](Themes/Blue/screenshot-small.png)](Themes/Blue/screenshot.png)
+| [Translucent Settings11](Themes/Translucent%20Settings11/README.md) | [![Blue](Themes/Translucent%20Settings11/screenshot-small.png)](Themes/Translucent%20Settings11/screenshot.png)
 
 ## General
 
