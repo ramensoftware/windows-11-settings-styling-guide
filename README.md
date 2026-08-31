@@ -9,7 +9,7 @@
   * [Contributing](#contributing)
 * [Themes](#themes)
 * [General](#general)
-  * [2→1 liners](#2→1-liners)
+  * [2→1 liners](#21-liners)
   * [Content Region](#content-region)
   * [Path Header Grid](#path-header-grid)
 * [Transforms](#transforms)
