@@ -23,6 +23,7 @@ Use [Taskbar Styler](https://windhawk.net/mods/windows-11-taskbar-styler) to ach
 
 ### Known issues
 
+  - might be broken in varioius ways on older versions on Windows due to changes in the layout of the Settings app
   - descriptions in 1-line items are not vertically aligned ![v-misalignment](screenshot_v_misalignment.png), not sure whether it's possible to fix using XAML styling alone and these 2 grid child lines (name/description) have to be aware of the size of it's cousins, so would likely need a change in the whole grandparent structure (a table)
   - not all lines (especially those in sub-menus) have been restyled
   - some views (like "Apps > Installed apps") crash the Settings app if their orientation is changed to collapse 2 rows into 1 row of 2 columns, so they're left as is
