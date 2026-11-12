@@ -293,5 +293,8 @@ controlStyles:
       - Background:=$InAppAcrylic
       - BorderThickness=0
       - BorderBrush:=$BgBorder
+  - target: SplitView#RootSplitView > Grid > Grid#PaneRoot
+    styles:
+      - CornerRadius=0
 ```
 </details>
