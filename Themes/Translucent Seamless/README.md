@@ -3,8 +3,8 @@
 A borderless, seamless frosted acrylic theme for the Windows 11 Settings app featuring unified glass styling, hidden card outlines, and no dividing sidebar seams.
 
 **Author**: [ArvindSaini978](https://github.com/ArvindSaini978)  
-**Credits**: Based on Translucent Settings 11 by [Link Vegas](https://github.com/linkvegas12).
 
+### Preview
 ![Screenshot](screenshot.png)
 
 ## Key Highlights
@@ -39,8 +39,28 @@ styleConstants:
   - OutRadius=8
   - InRadius=10
   - BgBorder=<SolidColorBrush Color="#00000000"/>
+  - MainAcrylic=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="{ThemeResource AcrylicFallback}" TintColor="{ThemeResource AcrylicTint}" TintLuminosityOpacity="0.4" TintOpacity="0.35"/>
+  - InAppAcrylic=<AcrylicBrush BackgroundSource="Backdrop" FallbackColor="{ThemeResource AcrylicFallback}" TintColor="{ThemeResource AcrylicTint}" TintLuminosityOpacity="0.4" TintOpacity="0.35"/>
 
 themeResourceVariables:
+  - AcrylicTint@Dark=#101010
+  - AcrylicTint@Light=#F3F3F3
+  - AcrylicFallback@Dark=#202020
+  - AcrylicFallback@Light=#F3F3F3
+  - SearchTint@Dark=#18FFFFFF
+  - SearchTint@Light=#66FFFFFF
+  - SearchBorder@Dark=#22FFFFFF
+  - SearchBorder@Light=#33FFFFFF
+  - TextControlBackground@Light:=<SolidColorBrush Color="#05FFFFFF"/>
+  - TextControlBackgroundPointerOver@Light:=<SolidColorBrush Color="#15FFFFFF"/>
+  - TextControlBackgroundFocused@Light:=<SolidColorBrush Color="#25FFFFFF"/>
+  - TextControlBackground@Dark:=<SolidColorBrush Color="#08FFFFFF"/>
+  - TextControlBackgroundPointerOver@Dark:=<SolidColorBrush Color="#12FFFFFF"/>
+  - TextControlBackgroundFocused@Dark:=<SolidColorBrush Color="#1AFFFFFF"/>
+  - ComboBoxDropDownBackground@Light:=<SolidColorBrush Color="#00000000"/>
+  - ComboBoxDropDownBackground@Dark:=<SolidColorBrush Color="#00000000"/>
+  - MenuFlyoutPresenterBackground@Light:=<SolidColorBrush Color="#00000000"/>
+  - MenuFlyoutPresenterBackground@Dark:=<SolidColorBrush Color="#00000000"/>
   - Overlay@Light=#55FFFFFF
   - Overlay@Dark=#09FFFFFF
   - Border@Light=#00000000
@@ -108,14 +128,12 @@ controlStyles:
     styles:
       - CornerRadius:=$InRadius
 
-  # 1. Sidebar & Navigation
   - target: Grid#PaneRoot
     styles:
-      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="#00000000" TintColor="#101010" TintLuminosityOpacity="0.45" TintOpacity="0.4"/>
+      - Background:=$MainAcrylic
       - BorderThickness=0
       - BorderBrush:=<SolidColorBrush Color="#00000000"/>
 
-  # 2. SplitView Pane Dividers and Borders
   - target: SplitView#RootSplitView
     styles:
       - PaneBorderThickness=0
@@ -133,7 +151,6 @@ controlStyles:
       - BorderThickness=0
       - Visibility=Collapsed
 
-  # 3. Main Content Area
   - target: SplitView#RootSplitView > Grid > Grid#ContentRoot
     styles:
       - Margin=-2,0,0,0
@@ -146,12 +163,11 @@ controlStyles:
 
   - target: SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid
     styles:
-      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="#00000000" TintColor="#101010" TintLuminosityOpacity="0.45" TintOpacity="0.4"/>
+      - Background:=$MainAcrylic
       - CornerRadius=0
       - BorderThickness=0
       - BorderBrush:=<SolidColorBrush Color="#00000000"/>
 
-  # 4. Containers
   - target: Grid#ContentRoot
     styles:
       - Background:=<SolidColorBrush Color="#00000000"/>
@@ -176,34 +192,37 @@ controlStyles:
     styles:
       - Background:=<SolidColorBrush Color="#00000000"/>
 
-  # 5. Titlebar
   - target: Grid#TitleBar
     styles:
-      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="#00000000" TintColor="#101010" TintLuminosityOpacity="0.45" TintOpacity="0.4"/>
+      - Background:=$MainAcrylic
 
   - target: Border#TitleBarBackground
     styles:
-      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="#00000000" TintColor="#101010" TintLuminosityOpacity="0.45" TintOpacity="0.4"/>
+      - Background:=$MainAcrylic
 
-  # 6. Search Bar
   - target: StackPanel#SettingsCommandSearchBoxBackground
     styles:
       - CornerRadius=$InRadius
       - MinHeight=32
+      - Background:=$BgBorder
 
   - target: TextBox#CommandSearchTextBox
     styles:
       - CornerRadius=$InRadius
       - VerticalContentAlignment=Center
-      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" FallbackColor="#00000000" TintColor="#252525" TintLuminosityOpacity="0.6" TintOpacity="0.5"/>
-      - BorderBrush:=<SolidColorBrush Color="#22FFFFFF"/>
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SearchBorder}"/>
+      - BorderThickness=1
+
+  - target: TextBox#CommandSearchTextBox > Grid > Border#BorderElement
+    styles:
+      - CornerRadius=$InRadius
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SearchBorder}"/>
       - BorderThickness=1
 
   - target: TextBox#CommandSearchTextBox > Grid > ScrollViewer
     styles:
       - VerticalAlignment=Center
 
-  # 7. Progress Bars
   - target: Windows.UI.Xaml.Shapes.Rectangle#ProgressBarIndicator
     styles:
       - RadiusX=4
@@ -232,7 +251,6 @@ controlStyles:
     styles:
       - Height=16
 
-  # 8. Outlines Stripped
   - target: SystemSettings.View.SettingsExpander > Grid
     styles:
       - BorderThickness=0
@@ -252,5 +270,28 @@ controlStyles:
     styles:
       - BorderThickness=0
       - BorderBrush:=<SolidColorBrush Color="#00000000"/>
+
+  - target: Border#PopupBorder
+    styles:
+      - Background:=$InAppAcrylic
+      - BorderThickness=0
+      - BorderBrush:=$BgBorder
+
+  - target: Border#PopupBorder > ScrollViewer
+    styles:
+      - Background:=$BgBorder
+
+  - target: Border#PopupBorder > ScrollViewer > Border#Root
+    styles:
+      - Background:=$BgBorder
+
+  - target: MenuFlyoutPresenter
+    styles:
+      - Background:=$InAppAcrylic
+      - BorderThickness=0
+      - BorderBrush:=$BgBorder
+  - target: SplitView#RootSplitView > Grid > Grid#PaneRoot
+    styles:
+      - CornerRadius=0
 ```
 </details>
