@@ -4,11 +4,8 @@ A borderless, seamless frosted acrylic theme for the Windows 11 Settings app fea
 
 **Author**: [ArvindSaini978](https://github.com/ArvindSaini978)  
 
-### Dark Mode
-![Screenshot-dark](screenshot-dark.png)
-
-### Light Mode
-![Screenshot-light](screenshot-light.png)
+### Preview
+![Screenshot](screenshot.png)
 
 ## Key Highlights
 - **Full Expanded Sidebar**: Keeps navigation labels fully visible while seamlessly blending the sidebar into the content canvas.
