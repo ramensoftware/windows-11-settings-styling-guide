@@ -6,16 +6,18 @@ box in the top-left, the "All settings" header, square corners everywhere, the
 old accent-green highlight, Windows 10 acrylic on the navigation pane and the
 Windows 10 toggle switch / list styles.
 
-**Author**: [Gian Antonio](https://github.com/babamohammed2022)
+**Author**: [@babamohammed2022](https://github.com/babamohammed2022)
 
+<!-- Decommenta questo blocco quando aggiungi le immagini:
 **Screenshot**
 
 [![Screenshot](screenshot.png)](screenshot.png)
+-->
 
 ## Requirements
 
-- Windows 11 (tested on 25H2 branch, Settings app version `SystemSettings`).
-- [Windhawk](https://windhawk.net/) 1.7 or newer.
+- Windows 11 24H2 (build 26100) - tested.
+- [Windhawk](https://windhawk.net/) 1.7.3.
 - The [Windows 11 Settings Styler](https://windhawk.net/mods/windows-11-settings-styler)
   mod installed and enabled.
 - For best results use the **Windows 10 taskbar / Start** look from the
@@ -46,9 +48,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   `controlStyles`, `themeResourceVariables`). It is based on the same selector
   syntax documented in
   [the Windows 11 Settings styling guide](https://github.com/ramensoftware/windows-11-settings-styling-guide).
-- Language-specific targets are provided for a few elements (English, Italian,
-  French, ...): if your display language is not covered, add your own variant
-  of the `SystemSettings.View.SettingsNavigationViewItem[Content=...]` selector.
+- A few rules target localized labels (the navigation items whose content is
+  `System` / `Sistema` / `Système` and the "All settings" text): if your
+  display language is not covered, add your own variant of the
+  `SystemSettings.View.SettingsNavigationViewItem[Content=...]` selector.
 - Element names in the Settings app change between Windows builds. If a rule
   stops applying after a feature update, use
   [UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/Guides/uwpspy.md) to
