@@ -21,6 +21,10 @@ Windows Update page:
 
 [![Screenshot](screenshot-2.png)](screenshot-2.png)
 
+Dark mode (Privacy & security page):
+
+[![Screenshot](screenshot-3.png)](screenshot-3.png)
+
 ## Requirements
 
 - Windows 11 24H2 (build 26100) - tested.
