@@ -1,0 +1,1367 @@
+theme: ''
+styleConstants:
+  - W10H_BANDH=183
+  - W10H_TOP=54
+  - W10H_FRAME=1200
+  - W10H_LEFT=109
+  - W10H_MASKDY=0
+  - W10H_LINKX=232
+  - W10H_LINKY=104
+  - W10H_CHARMY=56
+  - W10H_CHARMSMIN=980
+  - W10H_NLEFT=24
+  - W10H_CHARMSHIDE=680
+  - W10H_SEARCH=208
+  - W10H_TILES=297
+  - W10H_MINLEFT=29
+  - W10H_PANEOPEN=1
+  - W10H_EXPW=1008
+  - W10H_NAVTOP=38
+  - W10H_GAP=4
+  - W10H_SEARCHY=86
+  - W10H_SYSY=52
+  - W10M_home=(w10homeSel == 1)+(w10homeSel == `1`)+(w10homeSel == `True`)
+  - W10NETGLYPH=
+controlStyles:
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid > Border#BorderElement
+    styles:
+      - CornerRadius=0
+      - BorderThickness=2
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid#UserImageGrid
+    styles:
+      - Visibility=1
+  - target: Grid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10Page}" />
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid > Button#QueryButton > ContentPresenter#ContentPresenter > SymbolIcon > Grid > TextBlock
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Windows.UI.Xaml.Internal.RootScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid
+    styles:
+      - Width=752
+  - target: ContentControl#PaneCustomContentBorder > ContentPresenter > SystemSettings.View.SpacingStackPanel > SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid[2] > TextBlock#UserName
+    styles:
+      - Visibility=Collapsed
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=System], SystemSettings.View.SettingsNavigationViewItem[Content=Sistema], SystemSettings.View.SettingsNavigationViewItem[Content=Système]
+    styles:
+      - Margin=12,$W10H_SYSY,0,0
+  - target: TextBlock#UserAccount
+    styles:
+      - Text=All settings
+      - Visibility=1
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid
+    styles:
+      - Width=500
+  - target: SystemSettings.View.RootPage > Grid
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10Page}" />
+  - target: SystemSettings.View.RootPage > Grid > Grid#AppTitleBar
+    styles:
+      - Margin=60,0,0,0
+      - MinHeight=32
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid#PaneToggleButtonGrid > Grid#ButtonHolderGrid
+    styles:
+      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" TintColor="{ThemeResource Win10AcrylicTint}" TintOpacity="0.4" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource Win10AcrylicFallback}" />
+      - Margin=0,0,0,0
+      - Width=50
+      - Height=32
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid#PaneToggleButtonGrid > Grid#ButtonHolderGrid > Button#NavigationViewBackButton
+    styles:
+      - Width=55
+      - Height=32
+      - Margin=-1,0,0,0
+  - target: 1Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost > ScrollViewer#MenuItemsScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Microsoft.UI.Xaml.Controls.ItemsRepeater#MenuItemsHost > SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn
+    styles:
+      - Margin=6,0,0,0
+      - Background:=#6F6F6F
+  - target: Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - FontWeight=400
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Button
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: HyperlinkButton
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ComboBox
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ComboBoxItem
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: TextBox
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: CheckBox
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: RadioButton
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ToggleSwitch
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ListViewItem
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: GridViewItem
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: MenuFlyoutItem
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentControl
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: TextBox#CommandSearchTextBox > Grid > Button#QueryButton
+    styles:
+      - Grid.Column=2
+      - HorizontalAlignment=Right
+      - Margin=0,0,8,0
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid > Button#QueryButton
+    styles:
+      - Grid.Column=2
+      - HorizontalAlignment=Right
+      - Margin=0,0,8,0
+  - target: TextBox#CommandSearchTextBox > Grid > FontIcon
+    styles:
+      - Grid.Column=2
+      - HorizontalAlignment=Right
+      - Margin=0,0,18,0
+  - target: TextBox#CommandSearchTextBox > Grid > Button#DeleteButton
+    styles:
+      - Grid.Column=2
+      - HorizontalAlignment=Right
+      - Margin=0,0,40,0
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid > Button#DeleteButton
+    styles:
+      - Grid.Column=2
+      - HorizontalAlignment=Right
+      - Margin=0,0,40,0
+  - target: Grid#RootCommandSearchGrid
+    styles:
+      - Margin=15,$W10H_SEARCHY,0,0
+      - HorizontalAlignment=0
+      - Width=266
+      - CornerRadius=0
+  - target: SystemSettings.View.SettingsAutoSuggestCommandSearchBox#CommandSearchBox
+    styles:
+      - Width=266
+      - CornerRadius=0
+  - target: TextBox#CommandSearchTextBox
+    styles:
+      - CornerRadius=0
+      - MinHeight=32
+      - BorderThickness=2
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10SearchFill}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+  - target: StackPanel#SettingsCommandSearchBoxBackground
+    styles:
+      - CornerRadius=0
+      - MinHeight=32
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10SearchFill}" />
+  - target: TextBox#CommandSearchTextBox > Grid > Button#DeleteButton > Grid
+    styles:
+      - CornerRadius=0
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid@DisplayModeStates > Grid#PaneRoot
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource Win10AcrylicFallback}" TintOpacity="0.8" TintLuminosityOpacity="0.4" />
+  - target: Grid#PaneRoot
+    styles:
+      - CornerRadius=0
+      - Background:=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource Win10AcrylicFallback}" TintOpacity="0.8" TintLuminosityOpacity="0.4" />
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontSize=20
+      - Margin=15,0,-2,0
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Home] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Inicio] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Accueil] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Startseite] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Página Inicial] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Página inicial] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=System] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Sistema] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Système] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth & devices] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth e dispositivi] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth y dispositivos] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth et appareils] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth und Geräte] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth e dispositivos] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Network & internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Rete e Internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Red e Internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Réseau et Internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Netzwerk und Internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Rede e Internet] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - 'Content:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@Normal:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@PointerOver:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@Pressed:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@Selected:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@PointerOverSelected:={{($W10M_home) > 0 ? `` : ``}}'
+      - 'Content@PressedSelected:={{($W10M_home) > 0 ? `` : ``}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Personalization] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Personalizzazione] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Personalización] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Personnalisation] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Personalisierung] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Personalização] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Apps] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=App] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Aplicaciones] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Applications] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Aplicativos] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Accounts] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Account] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Cuentas] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Comptes] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Konten] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Contas] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Time & language] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Data/ora e lingua] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Ora e lingua] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Hora e idioma] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Heure et langue] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Zeit und Sprache] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Gaming] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Giochi] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Juegos] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Jeux] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Jogos] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Spiele] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Accessibility] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Accessibilità] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Accesibilidad] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Accessibilité] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Barrierefreiheit] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Acessibilidade] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Privacy & security] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Privacy e sicurezza] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Privacidad y seguridad] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Confidentialité et sécurité] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Datenschutz und Sicherheit] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon, SystemSettings.View.SettingsNavigationViewItem[Content=Privacidade e segurança] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Windows Update] > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Content:=
+      - Content@Normal:=
+      - Content@PointerOver:=
+      - Content@Pressed:=
+      - Content@Selected:=
+      - Content@PointerOverSelected:=
+      - Content@PressedSelected:=
+  - target: ComboBox
+    styles:
+      - CornerRadius=0
+  - target: ComboBoxItem
+    styles:
+      - CornerRadius=0
+  - target: ComboBoxItem > * > ContentPresenter
+    styles:
+      - CornerRadius=0
+  - target: ComboBoxItem > * > Border
+    styles:
+      - CornerRadius=0
+  - target: SystemSettings.View.StableComboBox
+    styles:
+      - CornerRadius=0
+  - target: SystemSettings.View.StableComboBox > Grid#LayoutRoot > Border#Background
+    styles:
+      - CornerRadius=0
+  - target: CheckBox > Grid#RootGrid@CombinedStates > Grid > Rectangle#NormalRectangle
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Slider > * > Rectangle#HorizontalTrackRect
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Slider > * > Rectangle#HorizontalDecreaseRect
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Slider > * > Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb
+    styles:
+      - CornerRadius=0
+  - target: Slider > * > Rectangle#VerticalTrackRect
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Slider > * > Rectangle#VerticalDecreaseRect
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Slider > * > Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar > * > Windows.UI.Xaml.Shapes.Rectangle#ThumbVisual
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Windows.UI.Xaml.Controls.Border#DeterminateRoot
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Shapes.Rectangle#ProgressBarIndicator
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: TextBox
+    styles:
+      - CornerRadius=0
+  - target: PasswordBox
+    styles:
+      - CornerRadius=0
+  - target: RichEditBox
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Border#BackgroundElement > Windows.UI.Xaml.Controls.Grid#DialogSpace
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Canvas > Windows.UI.Xaml.Controls.Border#PopupBorder
+    styles:
+      - CornerRadius=0
+  - target: ToolTip
+    styles:
+      - CornerRadius=0
+  - target: Border
+    styles:
+      - CornerRadius=0
+  - target: Grid
+    styles:
+      - CornerRadius=0
+  - target: ContentPresenter
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
+    styles:
+      - CornerRadius=0
+  - target: StackPanel
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.GridViewItemPresenter
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Shapes.Rectangle
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
+    styles:
+      - SelectionIndicatorCornerRadius=0
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#OuterBorder
+    styles:
+      - RadiusX=10
+      - RadiusY=10
+      - StrokeThickness=2
+      - Width=44
+      - Height=20
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobBounds
+    styles:
+      - RadiusX=10
+      - RadiusY=10
+      - Width=44
+      - Height=20
+  - target: Windows.UI.Xaml.Controls.Grid#SwitchKnob > Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobOff
+    styles:
+      - RadiusX=5
+      - RadiusY=5
+      - Width=10
+      - Height=10
+      - MaxWidth=10
+      - MaxHeight=10
+  - target: Windows.UI.Xaml.Controls.Grid#SwitchKnob > Windows.UI.Xaml.Controls.Border#SwitchKnobOn
+    styles:
+      - CornerRadius=5
+      - Width=10
+      - Height=10
+      - MaxWidth=10
+      - MaxHeight=10
+      - BorderThickness=0
+  - target: SystemSettings.View.RootPage > * > FontIcon
+    styles:
+      - FontFamily:=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: SystemSettings.View.RootPage > * > FontIcon
+    styles:
+      - FontFamily:=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: FontIcon
+    styles:
+      - FontFamily:=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#InlineContentPresenter > * > Button
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - BorderBrush:=<SolidColorBrush Color="Transparent" />
+      - BorderThickness=2
+      - Padding=8,5,8,6
+      - MinHeight=32
+      - CornerRadius=0
+  - target: ContentPresenter#InlineContentPresenter > * > Button > ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - Background@Pressed:=<SolidColorBrush Color="{ThemeResource Win10ButtonPressed}" />
+      - Background@Disabled:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - Foreground@PointerOver:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - Foreground@Pressed:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - Foreground@Disabled:=<SolidColorBrush Color="{ThemeResource Win10TextDisabled}" />
+      - BorderBrush:=<SolidColorBrush Color="Transparent" />
+      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource Win10ButtonHoverBorder}" />
+      - BorderBrush@Pressed:=<SolidColorBrush Color="Transparent" />
+      - BorderThickness=2
+      - BackgroundSizing=OuterBorderEdge
+      - CornerRadius=0
+  - target: ContentPresenter#InlineContentPresenter > * > Button > ContentPresenter#ContentPresenter > TextBlock
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - FontWeight=Normal
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#InlineContentPresenter > * > Button
+    styles:
+      - Style={ThemeResource DefaultButtonStyle}
+  - target: ContentPresenter#InlineContentPresenter > * > Microsoft.UI.Xaml.Controls.DropDownButton
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Text}" />
+      - BorderBrush:=<SolidColorBrush Color="Transparent" />
+      - BorderThickness=2
+      - Padding=8,5,8,6
+      - CornerRadius=0
+  - target: ContentPresenter#InlineContentPresenter > * > Microsoft.UI.Xaml.Controls.DropDownButton > Grid#RootGrid > ContentPresenter#ContentPresenter
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10ButtonFill}" />
+      - BorderBrush:=<SolidColorBrush Color="Transparent" />
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.EntityItem
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+      - MinHeight=48
+      - Padding=0,8,8,8
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.EntityItem > Grid
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.ButtonEntityItem > Button#ContainerButton
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - Padding=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.ButtonEntityItem > Button#ContainerButton > ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background=Transparent
+      - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource Win10ListHover}" />
+      - Background@Pressed:=<SolidColorBrush Color="{ThemeResource Win10ListPressed}" />
+      - BorderBrush=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.SettingsExpander > Grid > SystemSettings.View.ExpanderToggleButton#ContainerButton
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - Padding=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.SettingsExpander > Grid > SystemSettings.View.ExpanderToggleButton#ContainerButton > ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background=Transparent
+      - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource Win10ListHover}" />
+      - Background@Pressed:=<SolidColorBrush Color="{ThemeResource Win10ListPressed}" />
+      - BorderBrush=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.SettingsExpander > Grid > ContentPresenter#RevealedContent
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > SystemSettings.View.BorderedItemsControl
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Subtitle}" />
+      - FontSize=13
+  - target: SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent > TextBlock
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Subtitle}" />
+  - target: Frame#PermanentNavRootFrame
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Frame#PermanentNavRootFrame > * > ContentControl > Grid > TextBlock[1]
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Frame#PermanentNavRootFrame > * > ContentPresenter#IconContentPresenter
+    styles:
+      - Foreground={ThemeResource SystemControlForegroundAccentBrush}
+  - target: SystemSettings.View.HeroUserControl > * > Grid#CharmInfoGrid > StackPanel#CharmDescriptionStack > TextBlock#CharmTitle
+    styles:
+      - Text=>charmTtl
+  - target: SystemSettings.View.HeroUserControl > * > Grid#CharmInfoGrid > FontIcon#CharmItemIcon
+    styles:
+      - 'Glyph={{charmTtl == w10navWU ? `` : skip()}}'
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Foreground={ThemeResource SystemControlForegroundAccentBrush}
+  - target: SystemSettings.View.HomepageNetworkCharm > * > TextBlock#HomepageNetworkCharmCaption
+    styles:
+      - Text=>netCap
+  - target: SystemSettings.View.HomepageNetworkCharm > * > Grid[ColumnSpacing=16] > FontIcon
+    styles:
+      - 'Glyph={{netCap == `Ethernet` ? `` : (netCap == `Ethernet 2` ? `` : (netCap == `Ethernet 3` ? `` : `$W10NETGLYPH`))}}'
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Foreground={ThemeResource SystemControlForegroundAccentBrush}
+  - target: SystemSettings.View.CardView
+    styles:
+      - CornerRadius=0
+  - target: SystemSettings.View.CardView > Grid@FooterStates > StackPanel#BackgroundStackPanel
+    styles:
+      - CornerRadius=0
+      - CornerRadius@ShowFooter=0
+  - target: SystemSettings.View.NetworkHeroControl > * > ContentControl#NetworkHeroControVisualGrid
+    styles:
+      - CornerRadius=0
+  - target: Frame#PermanentNavRootFrame > * > RichTextBlock
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: Grid#RootCommandSearchGrid > Button#CommandSearchBoxFlyoutButton
+    styles:
+      - CornerRadius=0
+  - target: Grid#RootCommandSearchGrid > Button#CommandSearchBoxFlyoutButton > * > FontIcon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > Grid#LayoutRoot
+    styles:
+      - Background=Transparent
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#IconContentPresenter
+    styles:
+      - Width=64
+      - Height=60
+      - MinWidth=64
+      - MinHeight=60
+      - Padding=0
+      - Margin=0,0,12,0
+      - VerticalAlignment=Top
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid
+    styles:
+      - Width=52
+      - Height=48
+      - HorizontalAlignment=Left
+      - VerticalAlignment=Top
+      - Margin=2,2,0,0
+      - Padding=0
+      - BorderThickness=2
+      - BorderBrush={ThemeResource Win10TextBrush}
+      - Background=Transparent
+      - CornerRadius=0
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock[1]
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontSize=18
+      - FontWeight=Normal
+      - Foreground={ThemeResource Win10TextBrush}
+      - Width=Auto
+      - Height=Auto
+      - HorizontalAlignment=Center
+      - VerticalAlignment=Center
+      - TextAlignment=Center
+      - Margin=0
+      - Opacity=1
+      - Visibility=Visible
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock#BadgeBackground
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontSize=24
+      - FontWeight=Normal
+      - Foreground={ThemeResource Win10PageBrush}
+      - Width=24
+      - Height=24
+      - TextAlignment=Center
+      - HorizontalAlignment=Right
+      - VerticalAlignment=Bottom
+      - Margin=0,0,-10,-10
+      - Opacity=1
+      - Visibility=Visible
+      - IsHitTestVisible=False
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > * > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock#BadgeContent
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontSize=20
+      - FontWeight=Normal
+      - Foreground={ThemeResource Win10GreenBrush}
+      - Width=20
+      - Height=20
+      - TextAlignment=Center
+      - HorizontalAlignment=Right
+      - VerticalAlignment=Bottom
+      - Margin=0,0,-8,-8
+      - Opacity=1
+      - Visibility=Visible
+      - IsHitTestVisible=False
+  - target: Microsoft.UI.Xaml.Controls.BreadcrumbBar#PermanentNavigationViewBreadcrumbBar > * > Microsoft.UI.Xaml.Controls.BreadcrumbBarItem > * > TextBlock
+    styles:
+      - FontFamily=Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontWeight=SemiLight
+      - FontSize=28
+  - target: Microsoft.UI.Xaml.Controls.BreadcrumbBar#PermanentNavigationViewBreadcrumbBar > * > Microsoft.UI.Xaml.Controls.BreadcrumbBarItem > Grid#PART_LayoutRoot > TextBlock#PART_ChevronTextBlock
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - FontWeight=Normal
+      - FontSize=16
+      - Padding=10,6,10,0
+  - target: Frame#PermanentNavRootFrame
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: Grid#ContentGrid > ContentControl#HeaderContent
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > Frame
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > ItemsControl
+    styles:
+      - ItemContainerTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > ListView
+    styles:
+      - ItemContainerTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > GridView
+    styles:
+      - ItemContainerTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > StackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > ItemsStackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection/>
+  - target: Frame#PermanentNavRootFrame > * > ContentPresenter#InlineContentPresenter
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: Windows.UI.Xaml.Controls.ProgressRing
+    styles:
+      - Template:=<ControlTemplate TargetType="ProgressRing"><Grid x:Name="Ring" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Padding="{TemplateBinding Padding}" MaxWidth="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.MaxSideLength}" MaxHeight="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.MaxSideLength}" Visibility="Collapsed" RenderTransformOrigin=".5,.5" FlowDirection="LeftToRight"><Grid.Resources><Style x:Key="ProgressRingEllipseStyle" TargetType="Ellipse"><Setter Property="Opacity" Value="0" /><Setter Property="HorizontalAlignment" Value="Left" /><Setter Property="VerticalAlignment" Value="Top" /></Style></Grid.Resources><VisualStateManager.VisualStateGroups><VisualStateGroup x:Name="SizeStates"><VisualState x:Name="Large"><Storyboard><ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="SixthCircle" Storyboard.TargetProperty="Visibility"><DiscreteObjectKeyFrame KeyTime="0"><DiscreteObjectKeyFrame.Value><Visibility>Visible</Visibility></DiscreteObjectKeyFrame.Value></DiscreteObjectKeyFrame></ObjectAnimationUsingKeyFrames></Storyboard></VisualState><VisualState x:Name="Small" /></VisualStateGroup><VisualStateGroup x:Name="ActiveStates"><VisualState x:Name="Inactive" /><VisualState x:Name="Active"><Storyboard RepeatBehavior="Forever"><ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Ring" Storyboard.TargetProperty="Visibility"><DiscreteObjectKeyFrame KeyTime="0"><DiscreteObjectKeyFrame.Value><Visibility>Visible</Visibility></DiscreteObjectKeyFrame.Value></DiscreteObjectKeyFrame></ObjectAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1" Storyboard.TargetProperty="Opacity" BeginTime="0"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.167"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.334"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.501"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.668"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E6" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.835"><DiscreteDoubleKeyFrame KeyTime="0" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" /><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1R" BeginTime="0" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-110" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="10" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="93"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="205" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="357" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="439"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="585" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2R" BeginTime="00:00:00.167" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-116" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="4" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="87"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="199" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="351" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="433"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="579" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3R" BeginTime="00:00:00.334" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-122" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-2" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="81"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="193" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="345" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="427"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="573" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4R" BeginTime="00:00:00.501" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-128" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-8" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="75"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="187" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="339" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="421"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="567" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5R" BeginTime="00:00:00.668" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-134" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-14" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="69"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="181" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="333" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="415"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="561" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E6R" BeginTime="00:00:00.835" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-140" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-20" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="63"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="175" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="327" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="409"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="555" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames></Storyboard></VisualState></VisualStateGroup></VisualStateManager.VisualStateGroups><Canvas RenderTransformOrigin=".5,.5"><Canvas.RenderTransform><RotateTransform x:Name="E1R" /></Canvas.RenderTransform><Ellipse x:Name="E1" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas RenderTransformOrigin=".5,.5"><Canvas.RenderTransform><RotateTransform x:Name="E2R" /></Canvas.RenderTransform><Ellipse x:Name="E2" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas RenderTransformOrigin=".5,.5"><Canvas.RenderTransform><RotateTransform x:Name="E3R" /></Canvas.RenderTransform><Ellipse x:Name="E3" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas RenderTransformOrigin=".5,.5"><Canvas.RenderTransform><RotateTransform x:Name="E4R" /></Canvas.RenderTransform><Ellipse x:Name="E4" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas RenderTransformOrigin=".5,.5"><Canvas.RenderTransform><RotateTransform x:Name="E5R" /></Canvas.RenderTransform><Ellipse x:Name="E5" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas RenderTransformOrigin=".5,.5" Visibility="Collapsed" x:Name="SixthCircle"><Canvas.RenderTransform><RotateTransform x:Name="E6R" /></Canvas.RenderTransform><Ellipse x:Name="E6" Style="{StaticResource ProgressRingEllipseStyle}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" Fill="{TemplateBinding Foreground}"/></Canvas></Grid></ControlTemplate>
+  - target: Microsoft.UI.Xaml.Controls.ProgressRing
+    styles:
+      - Template:=<ControlTemplate TargetType="muxc:ProgressRing"><Grid x:Name="LayoutRoot" Background="Transparent"><VisualStateManager.VisualStateGroups><VisualStateGroup x:Name="CommonStates"><VisualState x:Name="Inactive"><VisualState.Setters><Setter Target="LayoutRoot.Opacity" Value="0"/></VisualState.Setters></VisualState><VisualState x:Name="DeterminateActive"><VisualState.Setters><Setter Target="LottiePlayer.Visibility" Value="Visible"/><Setter Target="W10Dots.Visibility" Value="Collapsed"/></VisualState.Setters></VisualState><VisualState x:Name="Active"><Storyboard RepeatBehavior="Forever"><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1" Storyboard.TargetProperty="Opacity" BeginTime="0"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1R" BeginTime="0" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-110" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="10" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="93"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="205" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="357" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="439"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="585" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.167"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2R" BeginTime="00:00:00.167" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-116" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="4" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="87"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="199" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="351" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="433"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="579" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.334"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3R" BeginTime="00:00:00.334" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-122" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-2" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="81"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="193" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="345" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="427"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="573" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.501"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4R" BeginTime="00:00:00.501" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-128" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-8" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="75"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="187" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="339" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="421"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="567" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5" Storyboard.TargetProperty="Opacity" BeginTime="00:00:00.668"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0"/><DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5R" BeginTime="00:00:00.668" Storyboard.TargetProperty="Angle"><SplineDoubleKeyFrame KeyTime="0" Value="-134" KeySpline="0.13,0.21,0.1,0.7"/><SplineDoubleKeyFrame KeyTime="0:0:0.433" Value="-14" KeySpline="0.02,0.33,0.38,0.77"/><SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="69"/><SplineDoubleKeyFrame KeyTime="0:0:1.617" Value="181" KeySpline="0.57,0.17,0.95,0.75"/><SplineDoubleKeyFrame KeyTime="0:0:2.017" Value="333" KeySpline="0,0.19,0.07,0.72"/><SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="415"/><SplineDoubleKeyFrame KeyTime="0:0:3.217" Value="561" KeySpline="0,0,0.95,0.37"/></DoubleAnimationUsingKeyFrames></Storyboard></VisualState></VisualStateGroup></VisualStateManager.VisualStateGroups><muxc:AnimatedVisualPlayer x:Name="LottiePlayer" AutoPlay="False" Stretch="Fill" Visibility="Collapsed"/><Viewbox x:Name="W10Dots" Stretch="Uniform"><Grid Width="40" Height="40" FlowDirection="LeftToRight"><Canvas Width="40" Height="40" RenderTransformOrigin="0.5,0.5"><Canvas.RenderTransform><RotateTransform x:Name="E1R"/></Canvas.RenderTransform><Ellipse x:Name="E1" Canvas.Left="0" Canvas.Top="16" Width="4" Height="4" Opacity="0" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas Width="40" Height="40" RenderTransformOrigin="0.5,0.5"><Canvas.RenderTransform><RotateTransform x:Name="E2R"/></Canvas.RenderTransform><Ellipse x:Name="E2" Canvas.Left="0" Canvas.Top="16" Width="4" Height="4" Opacity="0" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas Width="40" Height="40" RenderTransformOrigin="0.5,0.5"><Canvas.RenderTransform><RotateTransform x:Name="E3R"/></Canvas.RenderTransform><Ellipse x:Name="E3" Canvas.Left="0" Canvas.Top="16" Width="4" Height="4" Opacity="0" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas Width="40" Height="40" RenderTransformOrigin="0.5,0.5"><Canvas.RenderTransform><RotateTransform x:Name="E4R"/></Canvas.RenderTransform><Ellipse x:Name="E4" Canvas.Left="0" Canvas.Top="16" Width="4" Height="4" Opacity="0" Fill="{TemplateBinding Foreground}"/></Canvas><Canvas Width="40" Height="40" RenderTransformOrigin="0.5,0.5"><Canvas.RenderTransform><RotateTransform x:Name="E5R"/></Canvas.RenderTransform><Ellipse x:Name="E5" Canvas.Left="0" Canvas.Top="16" Width="4" Height="4" Opacity="0" Fill="{TemplateBinding Foreground}"/></Canvas></Grid></Viewbox></Grid></ControlTemplate>
+  - target: Windows.UI.Xaml.Controls.ProgressBar
+    styles:
+      - Template:=<ControlTemplate TargetType="ProgressBar"><Grid><VisualStateManager.VisualStateGroups><VisualStateGroup x:Name="CommonStates"><VisualStateGroup.Transitions><VisualTransition From="Updating" To="Determinate"><Storyboard><RepositionThemeAnimation TargetName="ProgressBarIndicator" FromHorizontalOffset="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.IndicatorLengthDelta}" /></Storyboard></VisualTransition><VisualTransition From="Paused" To="Determinate"><Storyboard><DoubleAnimation Storyboard.TargetName="ProgressBarIndicator" Storyboard.TargetProperty="Opacity" To="1" Duration="0:0:0.25" /></Storyboard></VisualTransition><VisualTransition From="Indeterminate" To="Determinate"><Storyboard><FadeInThemeAnimation TargetName="EllipseGrid" /></Storyboard></VisualTransition></VisualStateGroup.Transitions><VisualState x:Name="Determinate" /><VisualState x:Name="Updating" /><VisualState x:Name="Indeterminate"><Storyboard RepeatBehavior="Forever"><DoubleAnimation Storyboard.TargetName="EllipseGrid" Duration="0:0:3.917" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" From="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}" To="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}" /><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="E1"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><SplineDoubleKeyFrame KeyTime="0:0:1" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" KeySpline="0.4,0,0.6,1" /><EasingDoubleKeyFrame KeyTime="0:0:2" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" /><SplineDoubleKeyFrame KeyTime="0:0:3" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationEndPosition}" KeySpline="0.4,0,0.6,1" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="E2"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.167" Value="0" /><SplineDoubleKeyFrame KeyTime="0:0:1.167" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" KeySpline="0.4,0,0.6,1" /><EasingDoubleKeyFrame KeyTime="0:0:2.167" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" /><SplineDoubleKeyFrame KeyTime="0:0:3.167" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationEndPosition}" KeySpline="0.4,0,0.6,1" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="E3"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.333" Value="0" /><SplineDoubleKeyFrame KeyTime="0:0:1.333" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" KeySpline="0.4,0,0.6,1" /><EasingDoubleKeyFrame KeyTime="0:0:2.333" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" /><SplineDoubleKeyFrame KeyTime="0:0:3.333" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationEndPosition}" KeySpline="0.4,0,0.6,1" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="E4"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" /><SplineDoubleKeyFrame KeyTime="0:0:1.5" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" KeySpline="0.4,0,0.6,1" /><EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" /><SplineDoubleKeyFrame KeyTime="0:0:3.5" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationEndPosition}" KeySpline="0.4,0,0.6,1" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="E5"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="0" /><SplineDoubleKeyFrame KeyTime="0:0:1.667" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" KeySpline="0.4,0,0.6,1" /><EasingDoubleKeyFrame KeyTime="0:0:2.667" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationWellPosition}" /><SplineDoubleKeyFrame KeyTime="0:0:3.667" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseAnimationEndPosition}" KeySpline="0.4,0,0.6,1" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="B1"><EasingDoubleKeyFrame KeyTime="0" Value="-50" /><EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:2" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:3" Value="100" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="B2"><EasingDoubleKeyFrame KeyTime="0" Value="-50" /><EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:2.167" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:3.167" Value="100" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="B3"><EasingDoubleKeyFrame KeyTime="0" Value="-50" /><EasingDoubleKeyFrame KeyTime="0:0:0.833" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:2.333" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:3.333" Value="100" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="B4"><EasingDoubleKeyFrame KeyTime="0" Value="-50" /><EasingDoubleKeyFrame KeyTime="0:0:1" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="100" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="B5"><EasingDoubleKeyFrame KeyTime="0" Value="-50" /><EasingDoubleKeyFrame KeyTime="0:0:1.167" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:2.667" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:3.667" Value="100" /></DoubleAnimationUsingKeyFrames><DoubleAnimation Storyboard.TargetName="EllipseGrid" Storyboard.TargetProperty="Opacity" To="1" Duration="0" /><FadeOutThemeAnimation TargetName="DeterminateRoot" /><DoubleAnimation Storyboard.TargetName="DeterminateRoot" Storyboard.TargetProperty="Opacity" To="0" Duration="0" /><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="E1"><EasingDoubleKeyFrame KeyTime="0" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="E2"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.167" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.167" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.167" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.167" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="E3"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.333" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.333" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.333" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.333" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="E4"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="0" /></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="E5"><EasingDoubleKeyFrame KeyTime="0" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="0" /><EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.667" Value="1" /><EasingDoubleKeyFrame KeyTime="0:0:3.667" Value="0" /></DoubleAnimationUsingKeyFrames></Storyboard></VisualState><VisualState x:Name="Error"><Storyboard><ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ProgressBarIndicator"><DiscreteObjectKeyFrame KeyTime="0" Value="0" /></ObjectAnimationUsingKeyFrames></Storyboard></VisualState><VisualState x:Name="Paused"><Storyboard><ObjectAnimationUsingKeyFrames Storyboard.TargetName="ProgressBarIndicator" Storyboard.TargetProperty="Fill"><DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlForegroundAccentBrush}" /></ObjectAnimationUsingKeyFrames><DoubleAnimation Storyboard.TargetName="ProgressBarIndicator" Storyboard.TargetProperty="Opacity" To="0.6" Duration="0:0:0.25" /></Storyboard></VisualState></VisualStateGroup></VisualStateManager.VisualStateGroups><Grid x:Name="EllipseGrid" Opacity="0"><Grid.RenderTransform><TranslateTransform /></Grid.RenderTransform><Grid.ColumnDefinitions><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions><Border x:Name="B1" Grid.Column="8" RenderTransformOrigin="0.5,0.5"><Border.RenderTransform><TranslateTransform /></Border.RenderTransform><Ellipse x:Name="E1" Fill="{TemplateBinding Foreground}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><TranslateTransform /></Ellipse.RenderTransform></Ellipse></Border><Rectangle Grid.Column="7" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" /><Border x:Name="B2" Grid.Column="6" RenderTransformOrigin="0.5,0.5"><Border.RenderTransform><TranslateTransform /></Border.RenderTransform><Ellipse x:Name="E2" Fill="{TemplateBinding Foreground}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><TranslateTransform /></Ellipse.RenderTransform></Ellipse></Border><Rectangle Grid.Column="5" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" /><Border x:Name="B3" Grid.Column="4" RenderTransformOrigin="0.5,0.5"><Border.RenderTransform><TranslateTransform /></Border.RenderTransform><Ellipse x:Name="E3" Fill="{TemplateBinding Foreground}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><TranslateTransform /></Ellipse.RenderTransform></Ellipse></Border><Rectangle Grid.Column="3" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" /><Border x:Name="B4" Grid.Column="2" RenderTransformOrigin="0.5,0.5"><Border.RenderTransform><TranslateTransform /></Border.RenderTransform><Ellipse x:Name="E4" Fill="{TemplateBinding Foreground}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><TranslateTransform /></Ellipse.RenderTransform></Ellipse></Border><Rectangle Grid.Column="1" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseOffset}" /><Border x:Name="B5" Grid.Column="0" RenderTransformOrigin="0.5,0.5"><Border.RenderTransform><TranslateTransform /></Border.RenderTransform><Ellipse x:Name="E5" Fill="{TemplateBinding Foreground}" Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" Height="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.EllipseDiameter}" RenderTransformOrigin="0.5,0.5"><Ellipse.RenderTransform><TranslateTransform /></Ellipse.RenderTransform></Ellipse></Border></Grid><Border x:Name="DeterminateRoot" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"><Rectangle x:Name="ProgressBarIndicator" Margin="{TemplateBinding Padding}" Fill="{TemplateBinding Foreground}" HorizontalAlignment="Left" /></Border></Grid></ControlTemplate>
+  - target: Microsoft.UI.Xaml.Controls.ProgressBar
+    styles:
+      - Template:=<ControlTemplate TargetType="muxc:ProgressBar"><Grid x:Name="LayoutRoot" MinHeight="4" Clip="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ClipRect}"><VisualStateManager.VisualStateGroups><VisualStateGroup x:Name="CommonStates"><VisualState x:Name="Normal"/><VisualState x:Name="Determinate"/><VisualState x:Name="Updating"/><VisualState x:Name="UpdatingError"><VisualState.Setters><Setter Target="DeterminateProgressBarIndicator.Fill" Value="{ThemeResource SystemControlErrorTextForegroundBrush}"/></VisualState.Setters></VisualState><VisualState x:Name="Error"><VisualState.Setters><Setter Target="DeterminateProgressBarIndicator.Fill" Value="{ThemeResource SystemControlErrorTextForegroundBrush}"/></VisualState.Setters></VisualState><VisualState x:Name="Paused"><VisualState.Setters><Setter Target="DeterminateProgressBarIndicator.Opacity" Value="0.6"/></VisualState.Setters></VisualState><VisualState x:Name="Indeterminate"><VisualState.Setters><Setter Target="ProgressBarTrack.Opacity" Value="0"/><Setter Target="DeterminateProgressBarIndicator.Opacity" Value="0"/><Setter Target="W10Dots.Opacity" Value="1"/></VisualState.Setters><Storyboard RepeatBehavior="Forever" Duration="0:0:3.9"><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1T" Storyboard.TargetProperty="X" BeginTime="0"><DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}"/><SplineDoubleKeyFrame KeyTime="0:0:3" KeySpline="0.05,0.6,0.95,0.4" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E1" Storyboard.TargetProperty="Opacity" BeginTime="0"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2T" Storyboard.TargetProperty="X" BeginTime="0:0:0.167"><DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}"/><SplineDoubleKeyFrame KeyTime="0:0:3" KeySpline="0.05,0.6,0.95,0.4" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E2" Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.167"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3T" Storyboard.TargetProperty="X" BeginTime="0:0:0.334"><DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}"/><SplineDoubleKeyFrame KeyTime="0:0:3" KeySpline="0.05,0.6,0.95,0.4" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E3" Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.334"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4T" Storyboard.TargetProperty="X" BeginTime="0:0:0.501"><DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}"/><SplineDoubleKeyFrame KeyTime="0:0:3" KeySpline="0.05,0.6,0.95,0.4" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E4" Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.501"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="0"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5T" Storyboard.TargetProperty="X" BeginTime="0:0:0.668"><DiscreteDoubleKeyFrame KeyTime="0" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationStartPosition}"/><SplineDoubleKeyFrame KeyTime="0:0:3" KeySpline="0.05,0.6,0.95,0.4" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.ContainerAnimationEndPosition}"/></DoubleAnimationUsingKeyFrames><DoubleAnimationUsingKeyFrames Storyboard.TargetName="E5" Storyboard.TargetProperty="Opacity" BeginTime="0:0:0.668"><DiscreteDoubleKeyFrame KeyTime="0" Value="1"/><DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="0"/></DoubleAnimationUsingKeyFrames></Storyboard></VisualState><VisualState x:Name="IndeterminateError"><VisualState.Setters><Setter Target="ProgressBarTrack.Opacity" Value="0"/><Setter Target="DeterminateProgressBarIndicator.Opacity" Value="0"/></VisualState.Setters></VisualState><VisualState x:Name="IndeterminatePaused"><VisualState.Setters><Setter Target="ProgressBarTrack.Opacity" Value="0"/><Setter Target="DeterminateProgressBarIndicator.Opacity" Value="0"/></VisualState.Setters></VisualState></VisualStateGroup></VisualStateManager.VisualStateGroups><Border x:Name="ProgressBarTrack" Height="4" VerticalAlignment="Center" Background="{ThemeResource SystemControlBackgroundBaseLowBrush}"/><Rectangle x:Name="DeterminateProgressBarIndicator" Height="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="{TemplateBinding Padding}" Fill="{TemplateBinding Foreground}"/><Grid x:Name="W10Dots" Opacity="0" IsHitTestVisible="False"><Ellipse x:Name="E1" Width="4" Height="4" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0" Fill="{TemplateBinding Foreground}"><Ellipse.RenderTransform><TranslateTransform x:Name="E1T"/></Ellipse.RenderTransform></Ellipse><Ellipse x:Name="E2" Width="4" Height="4" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0" Fill="{TemplateBinding Foreground}"><Ellipse.RenderTransform><TranslateTransform x:Name="E2T"/></Ellipse.RenderTransform></Ellipse><Ellipse x:Name="E3" Width="4" Height="4" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0" Fill="{TemplateBinding Foreground}"><Ellipse.RenderTransform><TranslateTransform x:Name="E3T"/></Ellipse.RenderTransform></Ellipse><Ellipse x:Name="E4" Width="4" Height="4" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0" Fill="{TemplateBinding Foreground}"><Ellipse.RenderTransform><TranslateTransform x:Name="E4T"/></Ellipse.RenderTransform></Ellipse><Ellipse x:Name="E5" Width="4" Height="4" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0" Fill="{TemplateBinding Foreground}"><Ellipse.RenderTransform><TranslateTransform x:Name="E5T"/></Ellipse.RenderTransform></Ellipse></Grid></Grid></ControlTemplate>
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid@ToggleStates > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#SwitchKnob
+    styles:
+      - Margin=0,0,0,0
+      - Margin@On=4,0,0,0
+  - target: Slider > * > Rectangle#HorizontalTrackRect
+    styles:
+      - Height=2
+  - target: Slider > * > Rectangle#HorizontalDecreaseRect
+    styles:
+      - Height=2
+  - target: Slider > * > Rectangle#VerticalTrackRect
+    styles:
+      - Width=2
+  - target: Slider > * > Rectangle#VerticalDecreaseRect
+    styles:
+      - Width=2
+  - target: Slider > * > Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb
+    styles:
+      - Width=8
+      - Height=24
+      - CornerRadius=0
+  - target: Slider > * > Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb
+    styles:
+      - Width=24
+      - Height=8
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border, Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Margin=0
+      - BorderThickness=0
+      - CornerRadius=0
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Shapes.Ellipse#SliderInnerThumb
+    styles:
+      - Visibility=Collapsed
+  - target: CheckBox > Grid#RootGrid@CombinedStates > Grid > Rectangle#NormalRectangle
+    styles:
+      - StrokeThickness=2
+  - target: RadioButton > Grid#RootGrid > Grid > Windows.UI.Xaml.Shapes.Ellipse#OuterEllipse
+    styles:
+      - StrokeThickness=2
+  - target: RadioButton > Grid#RootGrid > Grid > Windows.UI.Xaml.Shapes.Ellipse#CheckGlyph
+    styles:
+      - MaxWidth=8
+      - MaxHeight=8
+  - target: SystemSettings.View.StableComboBox > Grid#LayoutRoot > Border#Background, ComboBox > Grid#LayoutRoot > Border#Background
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10Page}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+      - BorderThickness=2
+      - CornerRadius=0
+  - target: TextBox#CommandSearchTextBox > Grid
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10SearchFill}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+      - BorderThickness=2
+      - CornerRadius=0
+  - target: TextBox#CommandSearchTextBox > Grid > Border#BorderElement
+    styles:
+      - Opacity=0
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10SearchFill}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+      - BorderThickness=2
+      - CornerRadius=0
+  - target: SystemSettings.View.SettingsAutoSuggestSearchBox#AutoSuggestSearchBox > AutoSuggestBox#SearchAutoSuggestBox > Grid#LayoutRoot > TextBox#TextBox > Grid > Border#BorderElement
+    styles:
+      - Opacity=0
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Home], SystemSettings.View.SettingsNavigationViewItem[Content=Inicio], SystemSettings.View.SettingsNavigationViewItem[Content=Accueil], SystemSettings.View.SettingsNavigationViewItem[Content=Startseite], SystemSettings.View.SettingsNavigationViewItem[Content=Página Inicial], SystemSettings.View.SettingsNavigationViewItem[Content=Página inicial]
+    styles:
+      - IsSelected=>w10homeSel
+      - ActualHeight=>w10homeH
+      - 'MinHeight={{($W10M_home) > 0 ? skip() : 44}}'
+  - target: SystemSettings.View.RootPage
+    styles:
+      - ActualWidth=>w10winW
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView
+    styles:
+      - 'OpenPaneLength={{($W10M_home) > 0 ? (w10winW == `` ? 1366 : w10winW) : skip()}}'
+      - 'IsPaneOpen={{(w10navMode == `` ? ((w10winW == `` ? 1366 : w10winW) >= $W10H_EXPW ? 1 : 0) : (w10navMode == `w10x` ? 1 : 0)) == 1 ? `True` : (($W10M_home) > 0 ? ($W10H_PANEOPEN == 1 ? `True` : skip()) : skip())}}'
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid@DisplayModeGroup
+    styles:
+      - Tag@Expanded=w10x
+      - Tag@Compact=w10c
+      - Tag@Minimal=w10m
+      - Tag@MinimalWithBackButton=w10m
+      - Tag=>w10navMode
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot
+    styles:
+      - 'Background:={{($W10M_home) > 0 ? `<LinearGradientBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,$W10H_BANDH"><GradientStop Color="{ThemeResource SystemChromeMediumLowColor}" Offset="0"/><GradientStop Color="{ThemeResource SystemChromeMediumLowColor}" Offset="0.999"/><GradientStop Color="{ThemeResource Win10Page}" Offset="1"/></LinearGradientBrush>` : `<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource Win10AcrylicFallback}" TintOpacity="0.8" TintLuminosityOpacity="0.4" />`}}'
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid#PaneToggleButtonGrid > Grid#ButtonHolderGrid
+    styles:
+      - 'Background:={{($W10M_home) > 0 ? `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="Transparent"/>` : `<AcrylicBrush BackgroundSource="HostBackdrop" TintColor="{ThemeResource Win10AcrylicTint}" TintOpacity="0.4" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource Win10AcrylicFallback}" />`}}'
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border > Grid#PaneContentGrid
+    styles:
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Stretch` : skip()}}'
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#PaneRoot > Border
+    styles:
+      - 'Background:={{($W10M_home) > 0 ? `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="Transparent"/>` : `<AcrylicBrush BackgroundSource="HostBackdrop" TintColor="{ThemeResource Win10AcrylicTint}" TintOpacity="0.4" TintLuminosityOpacity="0.4" FallbackColor="#00000000" />`}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid
+    styles:
+      - Grid.Row=0
+      - Grid.RowSpan=7
+      - 'VerticalAlignment={{($W10M_home) > 0 ? skip() : `Top`}}'
+      - 'Margin={{($W10M_home) > 0 ? `0` : `-15,$W10H_NAVTOP,0,0`}}'
+      - 'Width={{($W10M_home) > 0 ? `Auto` : 500}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Stretch` : skip()}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost > ScrollViewer#MenuItemsScrollViewer
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? max($W10H_MINLEFT, ((w10winW == `` ? 1366 : w10winW) - 1350) / 2) : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? max($W10H_MINLEFT, ((w10winW == `` ? 1366 : w10winW) - 1080) / 2) : ((w10winW == `` ? 1366 : w10winW) >= 809 ? max($W10H_MINLEFT, ((w10winW == `` ? 1366 : w10winW) - 810) / 2) : ((w10winW == `` ? 1366 : w10winW) >= 539 ? max($W10H_MINLEFT, ((w10winW == `` ? 1366 : w10winW) - 540) / 2) : max(0, ((w10winW == `` ? 1366 : w10winW) - 270) / 2))))) : skip()}},$W10H_TILES,0,0'
+      - 'Width={{($W10M_home) > 0 ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? 1350 : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? 1080 : ((w10winW == `` ? 1366 : w10winW) >= 809 ? 810 : ((w10winW == `` ? 1366 : w10winW) >= 539 ? 540 : 270)))) : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Left` : skip()}}'
+      - 'VerticalScrollBarVisibility={{($W10M_home) > 0 ? `Hidden` : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem
+    styles:
+      - Content=>w10itm
+      - 'Margin={{($W10M_home) > 0 ? (((w10itm == `System`)+(w10itm == `Sistema`)+(w10itm == `Système`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,0,0,-105` : `0,0,0,-105`)))) : (((w10itm == `Bluetooth & devices`)+(w10itm == `Bluetooth e dispositivi`)+(w10itm == `Bluetooth y dispositivos`)+(w10itm == `Bluetooth et appareils`)+(w10itm == `Bluetooth und Geräte`)+(w10itm == `Bluetooth e dispositivos`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,0,0,-105` : `0,105,0,-210`)))) : (((w10itm == `Network & internet`)+(w10itm == `Rete e Internet`)+(w10itm == `Red e Internet`)+(w10itm == `Réseau et Internet`)+(w10itm == `Netzwerk und Internet`)+(w10itm == `Rede e Internet`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,105,0,-210` : `0,210,0,-315`)))) : (((w10itm == `Personalization`)+(w10itm == `Personalizzazione`)+(w10itm == `Personalización`)+(w10itm == `Personnalisation`)+(w10itm == `Personalisierung`)+(w10itm == `Personalização`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `810,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `810,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,105,0,-210` : `0,315,0,-420`)))) : (((w10itm == `Apps`)+(w10itm == `App`)+(w10itm == `Aplicaciones`)+(w10itm == `Applications`)+(w10itm == `Aplicativos`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `1080,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,210,0,-315` : `0,420,0,-525`)))) : (((w10itm == `Accounts`)+(w10itm == `Account`)+(w10itm == `Cuentas`)+(w10itm == `Comptes`)+(w10itm == `Konten`)+(w10itm == `Contas`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,210,0,-315` : `0,525,0,-630`)))) : (((w10itm == `Time & language`)+(w10itm == `Data/ora e lingua`)+(w10itm == `Ora e lingua`)+(w10itm == `Hora e idioma`)+(w10itm == `Heure et langue`)+(w10itm == `Zeit und Sprache`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,315,0,-420` : `0,630,0,-735`)))) : (((w10itm == `Gaming`)+(w10itm == `Giochi`)+(w10itm == `Juegos`)+(w10itm == `Jeux`)+(w10itm == `Jogos`)+(w10itm == `Spiele`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `810,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,315,0,-420` : `0,735,0,-840`)))) : (((w10itm == `Accessibility`)+(w10itm == `Accessibilità`)+(w10itm == `Accesibilidad`)+(w10itm == `Accessibilité`)+(w10itm == `Barrierefreiheit`)+(w10itm == `Acessibilidade`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `810,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,420,0,-525` : `0,840,0,-945`)))) : (((w10itm == `Privacy & security`)+(w10itm == `Privacy e sicurezza`)+(w10itm == `Privacidad y seguridad`)+(w10itm == `Confidentialité et sécurité`)+(w10itm == `Datenschutz und Sicherheit`)+(w10itm == `Privacidade e segurança`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `1080,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,315,0,-420` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,420,0,-525` : `0,945,0,-1050`)))) : (((w10itm == `Windows Update`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,315,0,-420` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,525,0,-630` : `0,1050,0,-1155`)))) : skip()))))))))))) : (((w10itm == `System`)+(w10itm == `Sistema`)+(w10itm == `Système`) > 0) ? (w10homeH == `` ? `12,96,0,0` : (w10homeH < 1 ? `12,96,0,0` : `12,$W10H_SYSY,0,0`)) : skip())}}'
+      - 'Width={{($W10M_home) > 0 ? 270 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 105 : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Left` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth & devices] > * > ContentPresenter#ContentPresenter, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth e dispositivi] > * > ContentPresenter#ContentPresenter, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth y dispositivos] > * > ContentPresenter#ContentPresenter, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth et appareils] > * > ContentPresenter#ContentPresenter, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth und Geräte] > * > ContentPresenter#ContentPresenter, SystemSettings.View.SettingsNavigationViewItem[Content=Bluetooth e dispositivos] > * > ContentPresenter#ContentPresenter
+    styles:
+      - Content=>w10navBT
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Windows Update] > * > ContentPresenter#ContentPresenter
+    styles:
+      - Content=>w10navWU
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter
+    styles:
+      - HorizontalAlignment=Stretch
+      - 'Width={{($W10M_home) > 0 ? 270 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 105 : skip()}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 105 : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot > Grid#PresenterContentRootGrid > Grid#ContentGrid
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0,8,10,0` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn
+    styles:
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox
+    styles:
+      - 'Width={{($W10M_home) > 0 ? 40 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 40 : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Left` : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : `15,0,-2,0`}}'
+      - 'Foreground:={{($W10M_home) > 0 ? `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemAccentColor}"/>` : `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemBaseHighColor}"/>`}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > * > ContentPresenter#ContentPresenter
+    styles:
+      - 'ContentTemplate:={{($W10M_home) > 0 ? `<DataTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><StackPanel><TextBlock Text="{Binding}" TextWrapping="Wrap"/><TextBlock Name="W10TileDesc" FontSize="12" TextWrapping="Wrap" Margin="0,3,0,0"/></StackPanel></DataTemplate>` : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `10,7,0,0` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : `Center`}}'
+      - HorizontalAlignment=Left
+      - 'FontSize={{($W10M_home) > 0 ? 15 : skip()}}'
+      - 'TextWrapping={{($W10M_home) > 0 ? `Wrap` : skip()}}'
+      - 'MaxWidth={{($W10M_home) > 0 ? 190 : skip()}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > * > ContentPresenter#ContentPresenter > StackPanel > TextBlock#W10TileDesc
+    styles:
+      - 'Text={{(((w10itm == `System`)+(w10itm == `Sistema`)+(w10itm == `Système`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Schermo, suono, notifiche, alimentazione` : (w10navBT == `Bluetooth & devices` ? `Display, sound, notifications, power` : (w10navBT == `Bluetooth y dispositivos` ? `Pantalla, sonido, notificaciones, energía` : (w10navBT == `Bluetooth et appareils` ? `Affichage, son, notifications, alimentation` : (w10navBT == `Bluetooth und Geräte` ? `Bildschirm, Sound, Benachrichtigungen, Energie` : (w10navBT == `Bluetooth e dispositivos` ? `Vídeo, som, notificações, energia` : `Display, sound, notifications, power`)))))) : (((w10itm == `Bluetooth & devices`)+(w10itm == `Bluetooth e dispositivi`)+(w10itm == `Bluetooth y dispositivos`)+(w10itm == `Bluetooth et appareils`)+(w10itm == `Bluetooth und Geräte`)+(w10itm == `Bluetooth e dispositivos`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Bluetooth, stampanti, mouse` : (w10navBT == `Bluetooth & devices` ? `Bluetooth, printers, mouse` : (w10navBT == `Bluetooth y dispositivos` ? `Bluetooth, impresoras, mouse` : (w10navBT == `Bluetooth et appareils` ? `Bluetooth, imprimantes, souris` : (w10navBT == `Bluetooth und Geräte` ? `Bluetooth, Drucker, Maus` : (w10navBT == `Bluetooth e dispositivos` ? `Bluetooth, impressoras, mouse` : `Bluetooth, printers, mouse`)))))) : (((w10itm == `Network & internet`)+(w10itm == `Rete e Internet`)+(w10itm == `Red e Internet`)+(w10itm == `Réseau et Internet`)+(w10itm == `Netzwerk und Internet`)+(w10itm == `Rede e Internet`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Wi-Fi, modalità aereo, VPN` : (w10navBT == `Bluetooth & devices` ? `Wi-Fi, airplane mode, VPN` : (w10navBT == `Bluetooth y dispositivos` ? `Wi-Fi, modo avión, VPN` : (w10navBT == `Bluetooth et appareils` ? `Wi-Fi, mode Avion, VPN` : (w10navBT == `Bluetooth und Geräte` ? `WLAN, Flugzeugmodus, VPN` : (w10navBT == `Bluetooth e dispositivos` ? `Wi-Fi, modo avião, VPN` : `Wi-Fi, airplane mode, VPN`)))))) : (((w10itm == `Personalization`)+(w10itm == `Personalizzazione`)+(w10itm == `Personalización`)+(w10itm == `Personnalisation`)+(w10itm == `Personalisierung`)+(w10itm == `Personalização`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Sfondo, schermata di blocco, colori` : (w10navBT == `Bluetooth & devices` ? `Background, lock screen, colors` : (w10navBT == `Bluetooth y dispositivos` ? `Fondo, pantalla de bloqueo, colores` : (w10navBT == `Bluetooth et appareils` ? `Arrière-plan, écran de verrouillage, couleurs` : (w10navBT == `Bluetooth und Geräte` ? `Hintergrund, Sperrbildschirm, Farben` : (w10navBT == `Bluetooth e dispositivos` ? `Tela de fundo, tela de bloqueio, cores` : `Background, lock screen, colors`)))))) : (((w10itm == `Apps`)+(w10itm == `App`)+(w10itm == `Aplicaciones`)+(w10itm == `Applications`)+(w10itm == `Aplicativos`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Disinstalla, impostazioni predefinite, funzionalità facoltative` : (w10navBT == `Bluetooth & devices` ? `Uninstall, defaults, optional features` : (w10navBT == `Bluetooth y dispositivos` ? `Desinstalar, valores predeterminados, características opcionales` : (w10navBT == `Bluetooth et appareils` ? `Désinstaller, valeurs par défaut, fonctionnalités facultatives` : (w10navBT == `Bluetooth und Geräte` ? `Deinstallieren, Standardwerte, optionale Features` : (w10navBT == `Bluetooth e dispositivos` ? `Desinstalar, padrões, recursos opcionais` : `Uninstall, defaults, optional features`)))))) : (((w10itm == `Accounts`)+(w10itm == `Account`)+(w10itm == `Cuentas`)+(w10itm == `Comptes`)+(w10itm == `Konten`)+(w10itm == `Contas`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Account personali, posta elettronica, sincronizzazione, lavoro, famiglia` : (w10navBT == `Bluetooth & devices` ? `Your accounts, email, sync, work, family` : (w10navBT == `Bluetooth y dispositivos` ? `Tus cuentas, correo electrónico, sincronización, trabajo, familia` : (w10navBT == `Bluetooth et appareils` ? `Vos comptes, e-mail, synchronisation, travail, famille` : (w10navBT == `Bluetooth und Geräte` ? `Ihre Konten, E-Mail, Synchronisieren, Arbeit, Familie` : (w10navBT == `Bluetooth e dispositivos` ? `Suas contas, email, sincronização, trabalho, família` : `Your accounts, email, sync, work, family`)))))) : (((w10itm == `Time & language`)+(w10itm == `Data/ora e lingua`)+(w10itm == `Ora e lingua`)+(w10itm == `Hora e idioma`)+(w10itm == `Heure et langue`)+(w10itm == `Zeit und Sprache`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Riconoscimento vocale, area geografica, data` : (w10navBT == `Bluetooth & devices` ? `Speech, region, date` : (w10navBT == `Bluetooth y dispositivos` ? `Voz, región, fecha` : (w10navBT == `Bluetooth et appareils` ? `Voix, région, date` : (w10navBT == `Bluetooth und Geräte` ? `Spracherkennung, Region, Datum` : (w10navBT == `Bluetooth e dispositivos` ? `Fala, região, data` : `Speech, region, date`)))))) : (((w10itm == `Gaming`)+(w10itm == `Giochi`)+(w10itm == `Juegos`)+(w10itm == `Jeux`)+(w10itm == `Jogos`)+(w10itm == `Spiele`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Barra dei giochi Xbox, acquisizioni, modalità gioco` : (w10navBT == `Bluetooth & devices` ? `Xbox Game Bar, captures, Game Mode` : (w10navBT == `Bluetooth y dispositivos` ? `Xbox Game Bar, capturas, Modo de juego` : (w10navBT == `Bluetooth et appareils` ? `Xbox Game Bar, captures, Mode Jeu` : (w10navBT == `Bluetooth und Geräte` ? `Xbox Game Bar, Aufnahmen, Spielmodus` : (w10navBT == `Bluetooth e dispositivos` ? `Xbox Game Bar, capturas, Modo de Jogo` : `Xbox Game Bar, captures, Game Mode`)))))) : (((w10itm == `Accessibility`)+(w10itm == `Accessibilità`)+(w10itm == `Accesibilidad`)+(w10itm == `Accessibilité`)+(w10itm == `Barrierefreiheit`)+(w10itm == `Acessibilidade`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Assistente vocale, lente di ingrandimento, contrasto elevato` : (w10navBT == `Bluetooth & devices` ? `Narrator, magnifier, high contrast` : (w10navBT == `Bluetooth y dispositivos` ? `Narrador, lupa, contraste alto` : (w10navBT == `Bluetooth et appareils` ? `Narrateur, loupe, contraste élevé` : (w10navBT == `Bluetooth und Geräte` ? `Sprachausgabe, Bildschirmlupe, hoher Kontrast` : (w10navBT == `Bluetooth e dispositivos` ? `Narrador, lupa, alto contraste` : `Narrator, magnifier, high contrast`)))))) : (((w10itm == `Privacy & security`)+(w10itm == `Privacy e sicurezza`)+(w10itm == `Privacidad y seguridad`)+(w10itm == `Confidentialité et sécurité`)+(w10itm == `Datenschutz und Sicherheit`)+(w10itm == `Privacidade e segurança`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Posizione, fotocamera, microfono` : (w10navBT == `Bluetooth & devices` ? `Location, camera, microphone` : (w10navBT == `Bluetooth y dispositivos` ? `Ubicación, cámara, micrófono` : (w10navBT == `Bluetooth et appareils` ? `Emplacement, caméra, microphone` : (w10navBT == `Bluetooth und Geräte` ? `Position, Kamera, Mikrofon` : (w10navBT == `Bluetooth e dispositivos` ? `Localização, câmera, microfone` : `Location, camera, microphone`)))))) : (((w10itm == `Windows Update`) > 0) ? (w10navBT == `Bluetooth e dispositivi` ? `Windows Update, ripristino, backup` : (w10navBT == `Bluetooth & devices` ? `Windows Update, recovery, backup` : (w10navBT == `Bluetooth y dispositivos` ? `Windows Update, recuperación, copia de seguridad` : (w10navBT == `Bluetooth et appareils` ? `Windows Update, récupération, sauvegarde` : (w10navBT == `Bluetooth und Geräte` ? `Windows Update, Wiederherstellung, Sicherung` : (w10navBT == `Bluetooth e dispositivos` ? `Windows Update, recuperação, backup` : `Windows Update, recovery, backup`)))))) : ``)))))))))))}}'
+      - Foreground:=<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemBaseMediumColor}"/>
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > ContentControl#PaneCustomContentBorder
+    styles:
+      - 'Grid.Row={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'Grid.RowSpan={{($W10M_home) > 0 ? 7 : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Stretch` : skip()}}'
+      - 'MaxWidth={{($W10M_home) > 0 ? $W10H_FRAME : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0,$W10H_TOP,0,0` : skip()}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > ContentControl#PaneCustomContentBorder > ContentPresenter > SystemSettings.View.SpacingStackPanel
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? ((w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSMIN ? $W10H_LEFT : $W10H_NLEFT) : skip()}},0,0,0'
+      - 'Padding={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Spacing={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Left` : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? `Auto` : skip()}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 400 : skip()}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : skip()}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > ContentControl#PaneCustomContentBorder > ContentPresenter > SystemSettings.View.SpacingStackPanel > SystemSettings.View.UserProfileControl#UserProfileControl
+    styles:
+      - 'Opacity={{($W10M_home) > 0 ? 1 : 0}}'
+      - IsHitTestVisible=False
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Padding={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? `Auto` : skip()}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 400 : skip()}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Padding={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? `Auto` : skip()}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 400 : skip()}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'BorderThickness={{($W10M_home) > 0 ? `0` : skip()}}'
+      - Background=Transparent
+      - IsHitTestVisible=False
+      - IsTabStop=False
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Padding={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? `Auto` : skip()}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 400 : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Padding={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'ColumnSpacing={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'RowSpacing={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? `Auto` : skip()}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 400 : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid#UserImageGrid
+    styles:
+      - 'Visibility={{($W10M_home) > 0 ? `Visible` : `1`}}'
+      - 'Width={{($W10M_home) > 0 ? 110 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 110 : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'CornerRadius={{($W10M_home) > 0 ? `55` : `0`}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid#UserImageGrid > Image
+    styles:
+      - 'Width={{($W10M_home) > 0 ? 110 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 110 : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'Stretch={{($W10M_home) > 0 ? `UniformToFill` : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid[2]
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `13,20,0,0` : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid[2] > TextBlock#UserName
+    styles:
+      - 'Visibility={{($W10M_home) > 0 ? `Visible` : `Collapsed`}}'
+      - 'FontSize={{($W10M_home) > 0 ? 20 : skip()}}'
+      - 'Foreground:={{($W10M_home) > 0 ? `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemBaseHighColor}"/>` : skip()}}'
+  - target: SystemSettings.View.UserProfileControl#UserProfileControl > Button#UserProfileButton > ContentPresenter#ContentPresenter > Grid#UserProfileLayout > Grid[2] > TextBlock#UserAccount
+    styles:
+      - Text=>w10mail
+      - 'Text={{($W10M_home) > 0 ? skip() : `All settings`}}'
+      - 'Visibility={{($W10M_home) > 0 ? `Collapsed` : `1`}}'
+      - 'FontSize={{($W10M_home) > 0 ? 13 : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0,4,0,0` : skip()}}'
+      - 'Foreground:={{($W10M_home) > 0 ? `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemBaseMediumColor}"/>` : skip()}}'
+  - target: Grid#CharmInfoGrid > StackPanel#CharmDescriptionStack > TextBlock#CharmAction
+    styles:
+      - Text=>w10wuAct
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > ContentControl#FooterContentBorder
+    styles:
+      - 'Content:={{($W10M_home) > 0 ? `` : skip()}}<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" MaxWidth="$W10H_FRAME" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="$W10H_BANDH"><Path Name="W10HomeMask" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="$W10H_LEFT,{{$W10H_TOP + $W10H_MASKDY}},0,0" Width="110" Height="110" Fill="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"><Path.Data><GeometryGroup FillRule="EvenOdd"><RectangleGeometry Rect="-1,-1,112,112"/><EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/></GeometryGroup></Path.Data></Path><TextBlock Name="W10HomeMail" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Visibility="Collapsed" Margin="$W10H_LINKX,$W10H_LINKY,0,0" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/><HyperlinkButton Name="W10HomeLink" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" FontSize="14" Margin="$W10H_LINKX,$W10H_LINKY,0,0" NavigateUri="https://account.microsoft.com/"/><StackPanel Name="W10HomeCharms" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,$W10H_CHARMY,0,0"><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="ms-settings:backup"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Path Data="M29.62,16.38 L28.5,15 L27.38,14.5 L26.38,14.25 L25.38,14.25 L24.5,14.62 L23.62,14.62 L22.5,13.5 L21.25,12.75 L20.5,12.75 L19.75,12.38 L18.12,12.5 L16.5,13.12 L15.25,14.25 L15,15.12 L14.12,16.75 L13.38,17.5 L11.75,18 L11.12,18.5 L10.38,19.62 L10.12,20.38 L10.12,22.12 L11.5,24.38 L12.5,25 L14.12,25 L14.75,25.25 L17.5,25.12 L18,25.38 L18.5,25.38 L18.88,24.38 L24.38,18.88 L25.5,18.88 L26.38,17.88 L27.5,17.88 L28.38,16.88 L29.38,16.75 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M24.75,9.5 L23.25,8.12 L22.25,7.75 L21.38,7.12 L18.5,7 L17.62,7.38 L17.25,7.75 L16.25,8 L14.12,10 L10.38,9.88 L8.62,10.75 L7.88,11.5 L7.62,12.25 L7,13.12 L6.88,14.62 L6.62,15.12 L6.25,15.5 L4.88,16.12 L3.62,17.62 L3.25,18.75 L3.25,20.25 L3.88,21.5 L5.5,23 L6.88,23.25 L8.38,23.25 L8.62,22.88 L8.5,20.88 L8.88,18.75 L10.5,16.88 L11.88,16 L12.38,16 L12.88,15.5 L13.12,14.5 L15.62,11.75 L16.75,11 L19.75,10.62 L20.5,10.88 L21.38,10.88 L22.25,11.5 L23.25,11.88 L24.12,12.75 L24.62,12.88 L25.38,12.62 L25.75,12.12 L25.75,11.25 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeOdTitle" Text="OneDrive" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeOdSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="ms-settings:windowsupdate"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Polygon Points="3.92,5.97 32.04,2.09 31.92,29.77 3.98,26.1" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Miter" StrokeMiterLimit="8"/><Path Data="M11.66,14 A5.53,5.53 0 0 1 20.63,10.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="23.17,7.79 18.08,13.88 24.58,14.14" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M22.51,16.15 A5.53,5.53 0 0 1 13.54,19.32" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="11,22.36 16.08,16.27 9.58,16.01" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeWuTitle" Text="" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeWuSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="https://rewards.bing.com/"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Rectangle Canvas.Left="3.01" Canvas.Top="1.22" Width="29.98" Height="1.77" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M3.99,1.22 L3.99,9.8 L15.94,15.77 M9.61,1.22 L9.61,12.61 M32.02,1.22 L32.02,9.8 L20.06,15.77 M26.58,1.22 L26.58,12.52" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/><Ellipse Canvas.Left="10.59" Canvas.Top="16.1" Width="14.83" Height="14.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeRwTitle" Text="Rewards" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeRwSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton></StackPanel></Grid>'
+      - 'Grid.Row={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'Grid.RowSpan={{($W10M_home) > 0 ? 4 : skip()}}'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Stretch` : skip()}}'
+      - 'HorizontalContentAlignment={{($W10M_home) > 0 ? `Stretch` : skip()}}'
+      - 'Margin={{($W10M_home) > 0 ? `0` : skip()}}'
+      - 'Visibility={{($W10M_home) > 0 ? `Visible` : skip()}}'
+  - target: ContentControl#FooterContentBorder > * > HyperlinkButton#W10HomeLink
+    styles:
+      - 'Content={{(w10navBT == `Bluetooth e dispositivi` ? `Il mio account Microsoft` : (w10navBT == `Bluetooth & devices` ? `My Microsoft Account` : (w10navBT == `Bluetooth y dispositivos` ? `Mi cuenta Microsoft` : (w10navBT == `Bluetooth et appareils` ? `Mon compte Microsoft` : (w10navBT == `Bluetooth und Geräte` ? `Mein Microsoft-Konto` : (w10navBT == `Bluetooth e dispositivos` ? `Minha conta Microsoft` : `My Microsoft Account`))))))}}'
+  - target: ContentControl#FooterContentBorder > * > TextBlock#W10HomeMail
+    styles:
+      - Text={{w10mail}}
+      - Visibility=Visible
+  - target: ContentControl#FooterContentBorder > * > TextBlock#W10HomeOdSub
+    styles:
+      - 'Text={{(w10navBT == `Bluetooth e dispositivi` ? `Gestisci` : (w10navBT == `Bluetooth & devices` ? `Manage` : (w10navBT == `Bluetooth y dispositivos` ? `Administrar` : (w10navBT == `Bluetooth et appareils` ? `Gérer` : (w10navBT == `Bluetooth und Geräte` ? `Verwalten` : (w10navBT == `Bluetooth e dispositivos` ? `Gerenciar` : `Manage`))))))}}'
+  - target: ContentControl#FooterContentBorder > * > TextBlock#W10HomeRwSub
+    styles:
+      - 'Text={{(w10navBT == `Bluetooth e dispositivi` ? `Guadagna e riscatta punti` : (w10navBT == `Bluetooth & devices` ? `Earn and redeem points` : (w10navBT == `Bluetooth y dispositivos` ? `Gana y canjea puntos` : (w10navBT == `Bluetooth et appareils` ? `Gagnez et échangez des points` : (w10navBT == `Bluetooth und Geräte` ? `Punkte sammeln und einlösen` : (w10navBT == `Bluetooth e dispositivos` ? `Ganhe e resgate pontos` : `Earn and redeem points`))))))}}'
+  - target: ContentControl#FooterContentBorder > * > TextBlock#W10HomeWuTitle
+    styles:
+      - 'Text={{w10navWU == `` ? `Windows Update` : w10navWU}}'
+  - target: ContentControl#FooterContentBorder > * > TextBlock#W10HomeWuSub
+    styles:
+      - 'Text={{charmTtl == w10navWU ? (w10wuAct == `` ? (w10navBT == `Bluetooth e dispositivi` ? `Verifica disponibilità aggiornamenti` : (w10navBT == `Bluetooth & devices` ? `Check for updates` : (w10navBT == `Bluetooth y dispositivos` ? `Buscar actualizaciones` : (w10navBT == `Bluetooth et appareils` ? `Rechercher des mises à jour` : (w10navBT == `Bluetooth und Geräte` ? `Nach Updates suchen` : (w10navBT == `Bluetooth e dispositivos` ? `Verificar se há atualizações` : `Check for updates`)))))) : w10wuAct) : (w10navBT == `Bluetooth e dispositivi` ? `Verifica disponibilità aggiornamenti` : (w10navBT == `Bluetooth & devices` ? `Check for updates` : (w10navBT == `Bluetooth y dispositivos` ? `Buscar actualizaciones` : (w10navBT == `Bluetooth et appareils` ? `Rechercher des mises à jour` : (w10navBT == `Bluetooth und Geräte` ? `Nach Updates suchen` : (w10navBT == `Bluetooth e dispositivos` ? `Verificar se há atualizações` : `Check for updates`))))))}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > ContentControl#FooterContentBorder
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: ContentControl#PaneCustomContentBorder
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: Microsoft.UI.Xaml.Controls.ItemsRepeater#MenuItemsHost > SystemSettings.View.SettingsNavigationViewItem
+    styles:
+      - ContentTransitions:=<TransitionCollection/>
+  - target: ContentControl#PaneCustomContentBorder > ContentPresenter > SystemSettings.View.SpacingStackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection/>
+  - target: ContentControl#FooterContentBorder > ContentPresenter > Grid > StackPanel#W10HomeCharms
+    styles:
+      - 'Visibility={{(w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSHIDE ? `Visible` : `Collapsed`}}'
+  - target: ContentControl#FooterContentBorder > ContentPresenter > Grid > StackPanel#W10HomeCharms > HyperlinkButton
+    styles:
+      - 'Width={{(((w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSMIN ? 190 : ((w10winW == `` ? 1366 : w10winW) >= 760 ? 160 : 130)))}}'
+  - target: ContentControl#FooterContentBorder > ContentPresenter > Grid > Windows.UI.Xaml.Shapes.Path#W10HomeMask
+    styles:
+      - 'Margin={{((w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSMIN ? $W10H_LEFT : $W10H_NLEFT)}},{{$W10H_TOP + $W10H_MASKDY}},0,0'
+  - target: ContentControl#FooterContentBorder > ContentPresenter > Grid > HyperlinkButton#W10HomeLink
+    styles:
+      - 'Margin={{((w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSMIN ? $W10H_LEFT : $W10H_NLEFT) + $W10H_LINKX - $W10H_LEFT}},{{$W10H_LINKY + 22}},0,0'
+  - target: ContentControl#FooterContentBorder > ContentPresenter > Grid > TextBlock#W10HomeMail
+    styles:
+      - 'Margin={{((w10winW == `` ? 1366 : w10winW) >= $W10H_CHARMSMIN ? $W10H_LEFT : $W10H_NLEFT) + $W10H_LINKX - $W10H_LEFT}},$W10H_LINKY,0,0'
+  - target: SystemSettings.View.RootPage > Grid#RootPageGrid > Grid#RootCommandSearchGrid
+    styles:
+      - ActualHeight=>w10srcH
+      - 'Margin={{($W10M_home) > 0 ? 0 : 15}},{{($W10M_home) > 0 ? $W10H_SEARCH : $W10H_SEARCHY}},0,0'
+      - 'VerticalAlignment={{($W10M_home) > 0 ? skip() : `Top`}}'
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? `Center` : `0`}}'
+      - 'Width={{($W10M_home) > 0 ? 336 : 266}}'
+  - target: Grid#RootCommandSearchGrid > SystemSettings.View.SettingsAutoSuggestCommandSearchBox#CommandSearchBox
+    styles:
+      - 'Width={{($W10M_home) > 0 ? 336 : 266}}'
+      - 'Visibility={{($W10M_home) > 0 ? `Visible` : skip()}}'
+  - target: SystemSettings.View.RootPage > Grid#RootPageGrid > Grid#RootCommandSearchGrid > Button#CommandSearchBoxFlyoutButton
+    styles:
+      - 'Visibility={{($W10M_home) > 0 ? `Collapsed` : skip()}}'
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > Grid#LayoutRoot > Grid#LeftLayout > ContentPresenter > SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > Grid > ContentControl
+    styles:
+      - Template:=<ControlTemplate TargetType="ContentControl"><Grid><Viewbox Width="44.16" Height="44.16" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" IsHitTestVisible="False"><Canvas Width="32" Height="32"><Polygon Points="0.42,5.47 28.54,1.59 28.42,29.27 0.48,25.6" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Miter" StrokeMiterLimit="8"/><Canvas Width="32" Height="32" Canvas.Left="1" Canvas.Top="2.5"><Path Data="M8.16,11.5 A5.53,5.53 0 0 1 17.13,8.33" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="19.67,5.29 14.58,11.38 21.08,11.64" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M19.01,13.65 A5.53,5.53 0 0 1 10.04,16.82" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="7.5,19.86 12.58,13.77 6.08,13.51" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/></Canvas></Canvas></Viewbox><ContentPresenter/></Grid></ControlTemplate>
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > Grid#LayoutRoot > Grid#LeftLayout > ContentPresenter > SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock
+    styles:
+      - Opacity=0
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > Grid#LayoutRoot > Grid#LeftLayout > ContentPresenter > SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock#BadgeBackground
+    styles:
+      - Opacity=1
+  - target: SystemSettings.View.TwoSegmentsHeroUserControl#OneSegmentHeroEntityItemUserControl > Grid#LayoutRoot > Grid#LeftLayout > ContentPresenter > SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > Grid > ContentControl > Grid > TextBlock#BadgeContent
+    styles:
+      - Opacity=1
+  - target: Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > RichTextBlock
+    styles:
+      - Visibility=1
+  - target: ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > ContentControl#ListTemplate > ContentPresenter > SystemSettings.View.SettingsListView > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#ListViewItemPresenter > Border
+    styles:
+      - Margin=0,0,0,0
+  - target: ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > ContentControl#ListTemplate > ContentPresenter > SystemSettings.View.SettingsListView > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem
+    styles:
+      - Margin=0,0,0,0
+      - MinHeight=52
+  - target: ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > ContentControl#ListTemplate > ContentPresenter > SystemSettings.View.SettingsListView > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#ListViewItemPresenter > SystemSettings.View.EntityItem#EntityListItemControl
+    styles:
+      - BorderThickness=0,0,0,0
+  - target: ScrollViewer > ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.CategoryPage > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel
+    styles:
+      - GroupPadding=0,0,0,4
+  - target: TextBlock#Title
+    styles:
+      - Text=>win10UpdateHeroTitle
+  - target: Image#FeatureImage
+    styles:
+      - 'Opacity={{win10UpdateHeroTitle == `Windows Update` ? 0 : win10UpdateHeroTitle == `   Windows Update` ? 0 : win10UpdateHeroTitle == `Microsoft 365` ? 0 : win10UpdateHeroTitle == `   Microsoft 365` ? 0 : win10UpdateHeroTitle == `Rewards` ? 0 : win10UpdateHeroTitle == `★   Rewards` ? 0 : skip()}}'
+  - target: TextBlock#Title[Text=Windows Update]
+    styles:
+      - Text=   Windows Update
+      - FontFamily=Segoe UI, Segoe MDL2 Assets
+      - Margin=-35,0,0,0
+  - target: TextBlock#Title[Text=Microsoft 365]
+    styles:
+      - Text=   Microsoft 365
+      - FontFamily=Segoe UI, Segoe MDL2 Assets
+      - Margin=-35,0,0,0
+  - target: TextBlock#Title[Text=Rewards]
+    styles:
+      - Text=★   Rewards
+      - FontFamily=Segoe UI, Segoe MDL2 Assets
+      - Margin=-35,0,0,0
+  - target: SystemSettings.View.NetworkHeroControl > * > ContentControl#NetworkHeroControVisualGrid
+    styles:
+      - 'Template:=<ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" TargetType="ContentControl"><Grid><FontIcon Glyph="&#xE701;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="56" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" /></Grid></ControlTemplate> '
+  - target: FontIcon#NetworkHeroControlGlobeIcon
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+  - target: SystemSettings.View.NetworkHeroControl FontIcon
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Glyph=&#xE774;
+      - FontSize=14
+      - Width=20
+      - Height=20
+      - Margin=0,2,0,0
+      - HorizontalAlignment=Center
+      - VerticalAlignment=Center
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Padding=0
+      - Clip=None
+  - target: SystemSettings.View.NetworkHeroControl TextBlock
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+  - target: SystemSettings.View.NetworkHeroControl StackPanel
+    styles:
+      - Padding=0,2,0,2
+      - Margin=0
+  - target: Grid > FontIcon
+    styles:
+      - Margin=0,1,0,0
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Home], SystemSettings.View.SettingsNavigationViewItem[Content=Inicio], SystemSettings.View.SettingsNavigationViewItem[Content=Accueil], SystemSettings.View.SettingsNavigationViewItem[Content=Startseite], SystemSettings.View.SettingsNavigationViewItem[Content=Página Inicial], SystemSettings.View.SettingsNavigationViewItem[Content=Página inicial]
+    styles:
+      - 'Opacity={{($W10M_home) > 0 ? 0 : skip()}}'
+      - 'Height={{($W10M_home) > 0 ? 0 : 44}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : 44}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 0 : 44}}'
+      - 'IsHitTestVisible={{($W10M_home) > 0 ? `False` : skip()}}'
+      - 'IsTabStop={{($W10M_home) > 0 ? `False` : skip()}}'
+  - target: SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > * > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > * > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > * > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.EntityItem > Grid > ContentPresenter#IconContentPresenter > * > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > TextBlock[Text=], SystemSettings.View.ButtonEntityItem > * > ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - Text=
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > ContentControl#ListTemplate > ContentPresenter > SystemSettings.View.SettingsListView > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#ListViewItemPresenter > SystemSettings.View.EntityItem#EntityListItemControl > Grid > ContentPresenter#IconContentPresenter
+    styles:
+      - Margin=0,0,8,0
+      - VerticalAlignment=Center
+  - target: ScrollContentPresenter > Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid > Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid > SplitView#RootSplitView > Grid > Grid#ContentRoot > Border > Grid#ContentGrid > ContentPresenter#ContentPresenter > Frame#PermanentNavRootFrame > ContentPresenter > SystemSettings.View.L2Page#L2Page > Grid > Grid > SystemSettings.View.AlignableContentControl > ContentPresenter > Grid > SystemSettings.View.SettingsPageHost#pageContent > ScrollViewer#SettingsPageHostPanel > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#RootScrollableGrid > Grid > Grid > ContentControl > ContentPresenter > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > SystemSettings.View.ExpandItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > StackPanel > ContentControl#ListTemplate > ContentPresenter > SystemSettings.View.SettingsListView > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > ItemsPresenter > ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#ListViewItemPresenter > SystemSettings.View.EntityItem#EntityListItemControl > Grid > SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent > Grid > SystemSettings.View.SettingsWrapPanel > TextBlock
+    styles:
+      - Foreground={ThemeResource SystemControlForegroundBaseMediumBrush}
+      - FontSize=12
+  - target: ItemsStackPanel > SystemSettings.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#ListViewItemPresenter > SystemSettings.View.EntityItem#EntityListItemControl > Grid > SystemSettings.View.ReservedWidthReflowingPanel > StackPanel > ContentPresenter#SubtitleContent
+    styles:
+      - Margin=0,2,0,0
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock[Text=], ContentPresenter#IconContentPresenter > * > TextBlock[Text=]
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: ContentPresenter#IconContentPresenter > TextBlock, ContentPresenter#IconContentPresenter > * > TextBlock, ContentPresenter#IconContentPresenter > * > * > TextBlock
+    styles:
+      - FontFamily=Segoe MDL2 Assets, Segoe Fluent Icons
+  - target: TextBox#CommandSearchTextBox > Grid > Button#DeleteButton > Grid#ButtonLayoutGrid
+    styles:
+      - CornerRadius=0
+      - MinHeight=32
+  - target: Windows.UI.Xaml.Controls.StackPanel#TopBreakdownBar > Windows.UI.Xaml.Controls.ProgressBar > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#DeterminateRoot > Windows.UI.Xaml.Shapes.Rectangle#ProgressBarIndicator
+    styles:
+      - Height=16
+  - target: Windows.UI.Xaml.Controls.StackPanel#TopBreakdownBar > Windows.UI.Xaml.Controls.ProgressBar > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#DeterminateRoot
+    styles:
+      - Height=16
+  - target: Windows.UI.Xaml.Controls.StackPanel#TopBreakdownBar > Windows.UI.Xaml.Controls.ProgressBar
+    styles:
+      - Height=16
+  - target: SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > ContentPresenter[1] ContentPresenter#IconContentPresenter
+    styles:
+      - Content:=<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><FontIcon Glyph="&#xe713;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="16" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/></Grid>
+  - target: SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > ContentPresenter[2] ContentPresenter#IconContentPresenter
+    styles:
+      - Content:=<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><FontIcon Glyph="&#xe7ac;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="16" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/></Grid>
+  - target: SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > ContentPresenter[5] ContentPresenter#IconContentPresenter
+    styles:
+      - Content:=<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><FontIcon Glyph="&#xeb41;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="16" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/></Grid>
+  - target: SystemSettings.View.SettingsListView#settingPagesList > ItemsPresenter > ItemsStackPanel > ContentPresenter[6] ContentPresenter#IconContentPresenter
+    styles:
+      - Content:=<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><FontIcon Glyph="&#xe714;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="16" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/></Grid>
+  - target: SystemSettings.View.CategoryPage Grid ContentPresenter#IconContentPresenter
+    styles:
+      - Content:=<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"><FontIcon Glyph="&#xe7fc;" FontFamily="Segoe MDL2 Assets, Segoe Fluent Icons" FontSize="16"/></Grid>
+  - target: SystemSettings.View.ThemePreviewControl, SystemSettings.View.PersonalizationPreviewControl, ContentControl#ThemePreviewHost
+    styles:
+      - Template:=<ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" TargetType="ContentControl"><Viewbox Stretch="Fill"><Canvas Width="217" Height="110" ClipToBounds="True"><Rectangle Width="217" Height="110"><Rectangle.Fill><LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="#FF0A4FA8" Offset="0"/><GradientStop Color="#FF0F72D2" Offset="0.45"/><GradientStop Color="#FF1B94E8" Offset="0.7"/><GradientStop Color="#FF0C6BCB" Offset="1"/></LinearGradientBrush></Rectangle.Fill></Rectangle><Polygon Points="217,0 217,110 120,110 150,60" Opacity="0.25"><Polygon.Fill><LinearGradientBrush StartPoint="1,0.5" EndPoint="0,0.5"><GradientStop Color="#FF5CC8FF" Offset="0"/><GradientStop Color="#005CC8FF" Offset="1"/></LinearGradientBrush></Polygon.Fill></Polygon><Polygon Points="217,20 150,56 160,62 217,50" Opacity="0.18" Fill="#FF9BE0FF"/><Polygon Points="127,30 154,26 154,56 127,56" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="158,25.5 186,21 186,56 158,56" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="127,60 154,60 154,90 127,86" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="158,60 186,60 186,95 158,90" Fill="#E6FFFFFF" Opacity="0.85"/><Rectangle Canvas.Left="0" Canvas.Top="32" Width="106" Height="78" Fill="#FF101418" Opacity="0.96"/><Rectangle Canvas.Left="0" Canvas.Top="32" Width="24" Height="78" Fill="#FF0B0E11"/><Rectangle Canvas.Left="48" Canvas.Top="34" Width="22" Height="2" Fill="#FFFFFFFF"/><Rectangle Canvas.Left="6" Canvas.Top="52" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="60" Width="12" Height="1.5" Fill="#FF2E7BD6"/><Rectangle Canvas.Left="6" Canvas.Top="68" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="76" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="84" Width="12" Height="1.5" Fill="#FF2E7BD6"/><Rectangle Canvas.Left="6" Canvas.Top="92" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="50" Canvas.Top="42" Width="33" Height="34" Fill="#FF1F7FD1"/><TextBlock Canvas.Left="60" Canvas.Top="53" Text="Aa" FontSize="10" FontFamily="Segoe UI" Foreground="#FFFFFFFF"/><Rectangle Canvas.Left="85" Canvas.Top="42" Width="16" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="85" Canvas.Top="59" Width="16" Height="17" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="50" Canvas.Top="77" Width="16" Height="16" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="67" Canvas.Top="77" Width="16" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="85" Canvas.Top="77" Width="16" Height="16" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="50" Canvas.Top="94" Width="51" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/></Canvas></Viewbox></ControlTemplate>
+themeResourceVariables:
+  - Win10Pane@Light=#E6E6E6
+  - Win10Pane@Dark=#1F1F1F
+  - Win10Page@Light=#FFFFFF
+  - Win10Page@Dark=#000000
+  - ApplicationPageBackgroundThemeBrush@Light=#FFFFFF
+  - ApplicationPageBackgroundThemeBrush@Dark=#000000
+  - SolidBackgroundFillColorBase@Light=#FFFFFF
+  - SolidBackgroundFillColorBase@Dark=#000000
+  - NavigationViewDefaultPaneBackground@Light=#E6E6E6
+  - NavigationViewDefaultPaneBackground@Dark=#1F1F1F
+  - NavigationViewExpandedPaneBackground@Light=#E6E6E6
+  - NavigationViewExpandedPaneBackground@Dark=#1F1F1F
+  - Win10SearchBorder@Light=#66000000
+  - Win10SearchBorder@Dark=#66FFFFFF
+  - Win10SearchFill@Light=#F6F6F6
+  - Win10SearchFill@Dark=#2B2B2B
+  - TextControlBackground@Light=#F6F6F6
+  - TextControlBackground@Dark=#2B2B2B
+  - TextControlBackgroundPointerOver@Light=#FAFAFA
+  - TextControlBackgroundPointerOver@Dark=#333333
+  - TextControlBackgroundFocused@Light=#FFFFFF
+  - TextControlBackgroundFocused@Dark=#1A1A1A
+  - TextControlBorderBrush@Light=#66000000
+  - TextControlBorderBrush@Dark=#66FFFFFF
+  - TextControlBorderBrushPointerOver@Light=#99000000
+  - TextControlBorderBrushPointerOver@Dark=#99FFFFFF
+  - TextControlElevationBorderBrush@Light=#66000000
+  - TextControlElevationBorderBrush@Dark=#66FFFFFF
+  - TextControlPlaceholderForeground@Light=#99000000
+  - TextControlPlaceholderForeground@Dark=#99FFFFFF
+  - TextControlBorderBrushFocused@Light=#66000000
+  - TextControlBorderBrushFocused@Dark=#66FFFFFF
+  - TextControlElevationBorderFocusedBrush@Light=#66000000
+  - TextControlElevationBorderFocusedBrush@Dark=#66FFFFFF
+  - ButtonBackground@Light:=<SolidColorBrush Color="#33000000" />
+  - ButtonBackground@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ButtonBackgroundPointerOver@Light:=<SolidColorBrush Color="#33000000" />
+  - ButtonBackgroundPointerOver@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ButtonBackgroundPressed@Light:=<SolidColorBrush Color="#66000000" />
+  - ButtonBackgroundPressed@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ButtonBackgroundDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ButtonBackgroundDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ButtonForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ButtonForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ButtonForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ButtonForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ButtonForegroundPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - ButtonForegroundPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ButtonForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ButtonForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ButtonBorderBrush@Light:=<SolidColorBrush Color="#00000000" />
+  - ButtonBorderBrush@Dark:=<SolidColorBrush Color="#00000000" />
+  - ButtonBorderBrushPointerOver@Light:=<SolidColorBrush Color="#66000000" />
+  - ButtonBorderBrushPointerOver@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ButtonBorderBrushPressed@Light:=<SolidColorBrush Color="#00000000" />
+  - ButtonBorderBrushPressed@Dark:=<SolidColorBrush Color="#00000000" />
+  - ButtonBorderBrushDisabled@Light:=<SolidColorBrush Color="#00000000" />
+  - ButtonBorderBrushDisabled@Dark:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBackground@Light:=<SolidColorBrush Color="#33000000" />
+  - AccentButtonBackground@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - AccentButtonBackgroundPointerOver@Light:=<SolidColorBrush Color="#33000000" />
+  - AccentButtonBackgroundPointerOver@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - AccentButtonBackgroundPressed@Light:=<SolidColorBrush Color="#66000000" />
+  - AccentButtonBackgroundPressed@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - AccentButtonBackgroundDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - AccentButtonBackgroundDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - AccentButtonForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - AccentButtonForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - AccentButtonForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - AccentButtonForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - AccentButtonForegroundPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - AccentButtonForegroundPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - AccentButtonForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - AccentButtonForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - AccentButtonBorderBrush@Light:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBorderBrush@Dark:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBorderBrushPointerOver@Light:=<SolidColorBrush Color="#66000000" />
+  - AccentButtonBorderBrushPointerOver@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - AccentButtonBorderBrushPressed@Light:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBorderBrushPressed@Dark:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBorderBrushDisabled@Light:=<SolidColorBrush Color="#00000000" />
+  - AccentButtonBorderBrushDisabled@Dark:=<SolidColorBrush Color="#00000000" />
+  - Win10Text@Light=#FF000000
+  - Win10Text@Dark=#FFFFFFFF
+  - Win10TextDisabled@Light=#66000000
+  - Win10TextDisabled@Dark=#66FFFFFF
+  - Win10Subtitle@Light=#99000000
+  - Win10Subtitle@Dark=#99FFFFFF
+  - Win10ButtonFill@Light=#33000000
+  - Win10ButtonFill@Dark=#33FFFFFF
+  - Win10ButtonPressed@Light=#66000000
+  - Win10ButtonPressed@Dark=#66FFFFFF
+  - Win10ButtonHoverBorder@Light=#66000000
+  - Win10ButtonHoverBorder@Dark=#66FFFFFF
+  - Win10ListHover@Light=#19000000
+  - Win10ListHover@Dark=#19FFFFFF
+  - Win10ListPressed@Light=#33000000
+  - Win10ListPressed@Dark=#33FFFFFF
+  - CardBackgroundFillColorDefault@Light=#00FFFFFF
+  - CardBackgroundFillColorDefault@Dark=#00000000
+  - CardBackgroundFillColorSecondary@Light=#00FFFFFF
+  - CardBackgroundFillColorSecondary@Dark=#00000000
+  - CardStrokeColorDefault@Light=#00000000
+  - CardStrokeColorDefault@Dark=#00000000
+  - CardBackgroundFillColorDefaultBrush@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CardBackgroundFillColorDefaultBrush@Dark:=<SolidColorBrush Color="#00000000" />
+  - CardBackgroundFillColorSecondaryBrush@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CardBackgroundFillColorSecondaryBrush@Dark:=<SolidColorBrush Color="#00000000" />
+  - CardStrokeColorDefaultBrush@Light:=<SolidColorBrush Color="#00000000" />
+  - CardStrokeColorDefaultBrush@Dark:=<SolidColorBrush Color="#00000000" />
+  - SolidBackgroundFillColorBaseBrush@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - SolidBackgroundFillColorBaseBrush@Dark:=<SolidColorBrush Color="#FF000000" />
+  - ToggleSwitchStrokeOff@Light:=<SolidColorBrush Color="#CC000000" />
+  - ToggleSwitchStrokeOff@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - ToggleSwitchStrokeOffPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ToggleSwitchStrokeOffPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOff@Light:=<SolidColorBrush Color="#CC000000" />
+  - ToggleSwitchKnobFillOff@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - ToggleSwitchKnobFillOffPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ToggleSwitchKnobFillOffPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchStrokeOn@Light:=<SolidColorBrush Color="Transparent" />
+  - ToggleSwitchStrokeOn@Dark:=<SolidColorBrush Color="Transparent" />
+  - ToggleSwitchKnobStrokeOn@Light:=<SolidColorBrush Color="Transparent" />
+  - ToggleSwitchKnobStrokeOn@Dark:=<SolidColorBrush Color="Transparent" />
+  - Win10TextBrush@Light:=<SolidColorBrush Color="#FF000000" />
+  - Win10TextBrush@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - Win10PageBrush@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - Win10PageBrush@Dark:=<SolidColorBrush Color="#FF000000" />
+  - Win10GreenBrush@Light:=<SolidColorBrush Color="#FF128B44" />
+  - Win10GreenBrush@Dark:=<SolidColorBrush Color="#FF128B44" />
+  - Win10AcrylicTint@Light:=<Color>#FFF2F2F2</Color>
+  - Win10AcrylicTint@Dark:=<Color>#FF1F1F1F</Color>
+  - Win10AcrylicFallback@Light:=<Color>#FFE6E6E6</Color>
+  - Win10AcrylicFallback@Dark:=<Color>#FF1F1F1F</Color>
+  - ControlCornerRadius=0
+  - OverlayCornerRadius=0
