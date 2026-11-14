@@ -8,11 +8,13 @@ Windows 10 toggle switch / list styles.
 
 **Author**: [@babamohammed2022](https://github.com/babamohammed2022)
 
-<!-- Decommenta questo blocco quando aggiungi le immagini:
 **Screenshot**
 
 [![Screenshot](screenshot.png)](screenshot.png)
--->
+
+Windows Update page:
+
+[![Screenshot](screenshot-2.png)](screenshot-2.png)
 
 ## Requirements
 
