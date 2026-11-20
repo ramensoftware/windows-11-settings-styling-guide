@@ -988,7 +988,7 @@ controlStyles:
       - Text=>w10wuAct
   - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid > ContentControl#FooterContentBorder
     styles:
-      - 'Content:={{($W10M_home) > 0 ? `` : skip()}}<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" MaxWidth="$W10H_FRAME" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="$W10H_BANDH"><Path Name="W10HomeMask" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="$W10H_LEFT,{{$W10H_TOP + $W10H_MASKDY}},0,0" Width="110" Height="110" Fill="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"><Path.Data><GeometryGroup FillRule="EvenOdd"><RectangleGeometry Rect="-1,-1,112,112"/><EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/></GeometryGroup></Path.Data></Path><TextBlock Name="W10HomeMail" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Visibility="Collapsed" Margin="$W10H_LINKX,$W10H_LINKY,0,0" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/><HyperlinkButton Name="W10HomeLink" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" FontSize="14" Margin="$W10H_LINKX,$W10H_LINKY,0,0" NavigateUri="https://account.microsoft.com/"/><StackPanel Name="W10HomeCharms" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,$W10H_CHARMY,0,0"><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="ms-settings:backup"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Path Data="M29.62,16.38 L28.5,15 L27.38,14.5 L26.38,14.25 L25.38,14.25 L24.5,14.62 L23.62,14.62 L22.5,13.5 L21.25,12.75 L20.5,12.75 L19.75,12.38 L18.12,12.5 L16.5,13.12 L15.25,14.25 L15,15.12 L14.12,16.75 L13.38,17.5 L11.75,18 L11.12,18.5 L10.38,19.62 L10.12,20.38 L10.12,22.12 L11.5,24.38 L12.5,25 L14.12,25 L14.75,25.25 L17.5,25.12 L18,25.38 L18.5,25.38 L18.88,24.38 L24.38,18.88 L25.5,18.88 L26.38,17.88 L27.5,17.88 L28.38,16.88 L29.38,16.75 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M24.75,9.5 L23.25,8.12 L22.25,7.75 L21.38,7.12 L18.5,7 L17.62,7.38 L17.25,7.75 L16.25,8 L14.12,10 L10.38,9.88 L8.62,10.75 L7.88,11.5 L7.62,12.25 L7,13.12 L6.88,14.62 L6.62,15.12 L6.25,15.5 L4.88,16.12 L3.62,17.62 L3.25,18.75 L3.25,20.25 L3.88,21.5 L5.5,23 L6.88,23.25 L8.38,23.25 L8.62,22.88 L8.5,20.88 L8.88,18.75 L10.5,16.88 L11.88,16 L12.38,16 L12.88,15.5 L13.12,14.5 L15.62,11.75 L16.75,11 L19.75,10.62 L20.5,10.88 L21.38,10.88 L22.25,11.5 L23.25,11.88 L24.12,12.75 L24.62,12.88 L25.38,12.62 L25.75,12.12 L25.75,11.25 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeOdTitle" Text="OneDrive" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeOdSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="ms-settings:windowsupdate"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Polygon Points="3.92,5.97 32.04,2.09 31.92,29.77 3.98,26.1" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Miter" StrokeMiterLimit="8"/><Path Data="M11.66,14 A5.53,5.53 0 0 1 20.63,10.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="23.17,7.79 18.08,13.88 24.58,14.14" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M22.51,16.15 A5.53,5.53 0 0 1 13.54,19.32" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="11,22.36 16.08,16.27 9.58,16.01" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeWuTitle" Text="" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeWuSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Left" NavigateUri="https://rewards.bing.com/"><StackPanel Orientation="Horizontal" Margin="0,0,10,0"><Grid Width="44" Height="38" HorizontalAlignment="Left"><Canvas Width="44" Height="38"><Rectangle Canvas.Left="3.01" Canvas.Top="1.22" Width="29.98" Height="1.77" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M3.99,1.22 L3.99,9.8 L15.94,15.77 M9.61,1.22 L9.61,12.61 M32.02,1.22 L32.02,9.8 L20.06,15.77 M26.58,1.22 L26.58,12.52" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/><Ellipse Canvas.Left="10.59" Canvas.Top="16.1" Width="14.83" Height="14.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Margin="12,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeRwTitle" Text="Rewards" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeRwSub" FontSize="12" TextWrapping="Wrap" MaxLines="2" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></StackPanel></HyperlinkButton></StackPanel></Grid>'
+      - 'Content:={{($W10M_home) > 0 ? `` : skip()}}<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" MaxWidth="$W10H_FRAME" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="$W10H_BANDH"><Path Name="W10HomeMask" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="$W10H_LEFT,{{$W10H_TOP + $W10H_MASKDY}},0,0" Width="110" Height="110" Fill="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}"><Path.Data><GeometryGroup FillRule="EvenOdd"><RectangleGeometry Rect="-1,-1,112,112"/><EllipseGeometry Center="55,55" RadiusX="55" RadiusY="55"/></GeometryGroup></Path.Data></Path><TextBlock Name="W10HomeMail" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Visibility="Collapsed" Margin="$W10H_LINKX,$W10H_LINKY,0,0" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/><HyperlinkButton Name="W10HomeLink" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" FontSize="14" Margin="$W10H_LINKX,$W10H_LINKY,0,0" NavigateUri="https://account.microsoft.com/"/><StackPanel Name="W10HomeCharms" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,$W10H_CHARMY,0,0"><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" NavigateUri="ms-settings:backup"><Grid Margin="0,0,10,0"><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Grid Grid.Column="0" Width="44" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"><Canvas Width="44" Height="38"><Path Data="M29.62,16.38 L28.5,15 L27.38,14.5 L26.38,14.25 L25.38,14.25 L24.5,14.62 L23.62,14.62 L22.5,13.5 L21.25,12.75 L20.5,12.75 L19.75,12.38 L18.12,12.5 L16.5,13.12 L15.25,14.25 L15,15.12 L14.12,16.75 L13.38,17.5 L11.75,18 L11.12,18.5 L10.38,19.62 L10.12,20.38 L10.12,22.12 L11.5,24.38 L12.5,25 L14.12,25 L14.75,25.25 L17.5,25.12 L18,25.38 L18.5,25.38 L18.88,24.38 L24.38,18.88 L25.5,18.88 L26.38,17.88 L27.5,17.88 L28.38,16.88 L29.38,16.75 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M24.75,9.5 L23.25,8.12 L22.25,7.75 L21.38,7.12 L18.5,7 L17.62,7.38 L17.25,7.75 L16.25,8 L14.12,10 L10.38,9.88 L8.62,10.75 L7.88,11.5 L7.62,12.25 L7,13.12 L6.88,14.62 L6.62,15.12 L6.25,15.5 L4.88,16.12 L3.62,17.62 L3.25,18.75 L3.25,20.25 L3.88,21.5 L5.5,23 L6.88,23.25 L8.38,23.25 L8.62,22.88 L8.5,20.88 L8.88,18.75 L10.5,16.88 L11.88,16 L12.38,16 L12.88,15.5 L13.12,14.5 L15.62,11.75 L16.75,11 L19.75,10.62 L20.5,10.88 L21.38,10.88 L22.25,11.5 L23.25,11.88 L24.12,12.75 L24.62,12.88 L25.38,12.62 L25.75,12.12 L25.75,11.25 Z" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeOdTitle" Text="OneDrive" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeOdSub" FontSize="12" TextWrapping="Wrap" MaxLines="3" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></Grid></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" NavigateUri="ms-settings:windowsupdate"><Grid Margin="0,0,10,0"><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Grid Grid.Column="0" Width="44" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"><Canvas Width="44" Height="38"><Polygon Points="3.92,5.97 32.04,2.09 31.92,29.77 3.98,26.1" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Miter" StrokeMiterLimit="8"/><Path Data="M11.66,14 A5.53,5.53 0 0 1 20.63,10.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="23.17,7.79 18.08,13.88 24.58,14.14" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M22.51,16.15 A5.53,5.53 0 0 1 13.54,19.32" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.91"/><Polygon Points="11,22.36 16.08,16.27 9.58,16.01" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeWuTitle" Text="" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeWuSub" FontSize="12" TextWrapping="Wrap" MaxLines="3" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></Grid></HyperlinkButton><HyperlinkButton Width="160" Padding="0" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" NavigateUri="https://rewards.bing.com/"><Grid Margin="0,0,10,0"><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions><Grid Grid.Column="0" Width="44" Height="38" HorizontalAlignment="Left" VerticalAlignment="Top"><Canvas Width="44" Height="38"><Rectangle Canvas.Left="3.01" Canvas.Top="1.22" Width="29.98" Height="1.77" Fill="{ThemeResource SystemControlForegroundBaseHighBrush}"/><Path Data="M3.99,1.22 L3.99,9.8 L15.94,15.77 M9.61,1.22 L9.61,12.61 M32.02,1.22 L32.02,9.8 L20.06,15.77 M26.58,1.22 L26.58,12.52" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/><Ellipse Canvas.Left="10.59" Canvas.Top="16.1" Width="14.83" Height="14.83" Stroke="{ThemeResource SystemControlForegroundBaseHighBrush}" StrokeThickness="1.95"/><Ellipse Canvas.Left="19.3" Canvas.Top="17.4" Width="21" Height="21" Fill="#FF2E8A55" Stroke="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" StrokeThickness="2"/><Polyline Points="26.11,29.11 28.93,31.73 34.81,26.23" Stroke="White" StrokeThickness="1.79" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Canvas></Grid><StackPanel Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center"><TextBlock Name="W10HomeRwTitle" Text="Rewards" FontSize="15" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}"/><TextBlock Name="W10HomeRwSub" FontSize="12" TextWrapping="Wrap" MaxLines="3" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"/></StackPanel></Grid></HyperlinkButton></StackPanel></Grid>'
       - 'Grid.Row={{($W10M_home) > 0 ? 0 : skip()}}'
       - 'Grid.RowSpan={{($W10M_home) > 0 ? 4 : skip()}}'
       - 'VerticalAlignment={{($W10M_home) > 0 ? `Top` : skip()}}'
@@ -1228,6 +1228,295 @@ controlStyles:
   - target: SystemSettings.View.ThemePreviewControl, SystemSettings.View.PersonalizationPreviewControl, ContentControl#ThemePreviewHost
     styles:
       - Template:=<ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" TargetType="ContentControl"><Viewbox Stretch="Fill"><Canvas Width="217" Height="110" ClipToBounds="True"><Rectangle Width="217" Height="110"><Rectangle.Fill><LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="#FF0A4FA8" Offset="0"/><GradientStop Color="#FF0F72D2" Offset="0.45"/><GradientStop Color="#FF1B94E8" Offset="0.7"/><GradientStop Color="#FF0C6BCB" Offset="1"/></LinearGradientBrush></Rectangle.Fill></Rectangle><Polygon Points="217,0 217,110 120,110 150,60" Opacity="0.25"><Polygon.Fill><LinearGradientBrush StartPoint="1,0.5" EndPoint="0,0.5"><GradientStop Color="#FF5CC8FF" Offset="0"/><GradientStop Color="#005CC8FF" Offset="1"/></LinearGradientBrush></Polygon.Fill></Polygon><Polygon Points="217,20 150,56 160,62 217,50" Opacity="0.18" Fill="#FF9BE0FF"/><Polygon Points="127,30 154,26 154,56 127,56" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="158,25.5 186,21 186,56 158,56" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="127,60 154,60 154,90 127,86" Fill="#E6FFFFFF" Opacity="0.85"/><Polygon Points="158,60 186,60 186,95 158,90" Fill="#E6FFFFFF" Opacity="0.85"/><Rectangle Canvas.Left="0" Canvas.Top="32" Width="106" Height="78" Fill="#FF101418" Opacity="0.96"/><Rectangle Canvas.Left="0" Canvas.Top="32" Width="24" Height="78" Fill="#FF0B0E11"/><Rectangle Canvas.Left="48" Canvas.Top="34" Width="22" Height="2" Fill="#FFFFFFFF"/><Rectangle Canvas.Left="6" Canvas.Top="52" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="60" Width="12" Height="1.5" Fill="#FF2E7BD6"/><Rectangle Canvas.Left="6" Canvas.Top="68" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="76" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="6" Canvas.Top="84" Width="12" Height="1.5" Fill="#FF2E7BD6"/><Rectangle Canvas.Left="6" Canvas.Top="92" Width="12" Height="1.5" Fill="#FFE8E8E8"/><Rectangle Canvas.Left="50" Canvas.Top="42" Width="33" Height="34" Fill="#FF1F7FD1"/><TextBlock Canvas.Left="60" Canvas.Top="53" Text="Aa" FontSize="10" FontFamily="Segoe UI" Foreground="#FFFFFFFF"/><Rectangle Canvas.Left="85" Canvas.Top="42" Width="16" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="85" Canvas.Top="59" Width="16" Height="17" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="50" Canvas.Top="77" Width="16" Height="16" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="67" Canvas.Top="77" Width="16" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="85" Canvas.Top="77" Width="16" Height="16" Fill="#FF3C4650" Stroke="#FF101418" StrokeThickness="1"/><Rectangle Canvas.Left="50" Canvas.Top="94" Width="51" Height="16" Fill="#FF2A6FB5" Stroke="#FF101418" StrokeThickness="1"/></Canvas></Viewbox></ControlTemplate>
+  - target: '// ==== W10+ (aggiunte): la disposizione della home non cambia. Dove un elemento serve anche alla home, la regola ripete per la home il valore originale ===='
+    styles:
+      - '// Valgono in tutta l''app, home compresa, solo: i comandi (interruttori, slider, caselle), i risultati della ricerca, le descrizioni comando e i menu. Ogni voce si può togliere da sola'
+  - target: '// W10+ barra laterale (solo fuori dalla home), misure di Windows 10: pannello largo 320, righe alte 48, icona a 16 e testo a 48 dal bordo'
+    styles:
+      - '// Riga Home da y=49 a y=97, casella di ricerca 288x32 a x=16 y=104, prima voce da y=144. Per spostare la casella: il 96 nella voce RootCommandSearchGrid più sotto'
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView
+    styles:
+      - 'OpenPaneLength={{($W10M_home) > 0 ? (w10winW == `` ? 1366 : w10winW) : 320}}'
+  - target: Grid#PaneRoot > Border > Grid#PaneContentGrid > Grid#ItemsContainerGrid
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : `-15,44,0,0`}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem[Content=Home], SystemSettings.View.SettingsNavigationViewItem[Content=Inicio], SystemSettings.View.SettingsNavigationViewItem[Content=Accueil], SystemSettings.View.SettingsNavigationViewItem[Content=Startseite], SystemSettings.View.SettingsNavigationViewItem[Content=Página Inicial], SystemSettings.View.SettingsNavigationViewItem[Content=Página inicial]
+    styles:
+      - 'Height={{($W10M_home) > 0 ? 0 : 48}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : 48}}'
+      - 'MaxHeight={{($W10M_home) > 0 ? 0 : 48}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? (((w10itm == `System`)+(w10itm == `Sistema`)+(w10itm == `Système`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,0,0,-105` : `0,0,0,-105`)))) : (((w10itm == `Bluetooth & devices`)+(w10itm == `Bluetooth e dispositivi`)+(w10itm == `Bluetooth y dispositivos`)+(w10itm == `Bluetooth et appareils`)+(w10itm == `Bluetooth und Geräte`)+(w10itm == `Bluetooth e dispositivos`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,0,0,-105` : `0,105,0,-210`)))) : (((w10itm == `Network & internet`)+(w10itm == `Rete e Internet`)+(w10itm == `Red e Internet`)+(w10itm == `Réseau et Internet`)+(w10itm == `Netzwerk und Internet`)+(w10itm == `Rede e Internet`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,105,0,-210` : `0,210,0,-315`)))) : (((w10itm == `Personalization`)+(w10itm == `Personalizzazione`)+(w10itm == `Personalización`)+(w10itm == `Personnalisation`)+(w10itm == `Personalisierung`)+(w10itm == `Personalização`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `810,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `810,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,105,0,-210` : `0,315,0,-420`)))) : (((w10itm == `Apps`)+(w10itm == `App`)+(w10itm == `Aplicaciones`)+(w10itm == `Applications`)+(w10itm == `Aplicativos`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `1080,0,0,-105` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,210,0,-315` : `0,420,0,-525`)))) : (((w10itm == `Accounts`)+(w10itm == `Account`)+(w10itm == `Cuentas`)+(w10itm == `Comptes`)+(w10itm == `Konten`)+(w10itm == `Contas`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,210,0,-315` : `0,525,0,-630`)))) : (((w10itm == `Time & language`)+(w10itm == `Data/ora e lingua`)+(w10itm == `Ora e lingua`)+(w10itm == `Hora e idioma`)+(w10itm == `Heure et langue`)+(w10itm == `Zeit und Sprache`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `270,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,315,0,-420` : `0,630,0,-735`)))) : (((w10itm == `Gaming`)+(w10itm == `Giochi`)+(w10itm == `Juegos`)+(w10itm == `Jeux`)+(w10itm == `Jogos`)+(w10itm == `Spiele`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `540,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `810,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,315,0,-420` : `0,735,0,-840`)))) : (((w10itm == `Accessibility`)+(w10itm == `Accessibilità`)+(w10itm == `Accesibilidad`)+(w10itm == `Accessibilité`)+(w10itm == `Barrierefreiheit`)+(w10itm == `Acessibilidade`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `810,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `540,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,420,0,-525` : `0,840,0,-945`)))) : (((w10itm == `Privacy & security`)+(w10itm == `Privacy e sicurezza`)+(w10itm == `Privacidad y seguridad`)+(w10itm == `Confidentialité et sécurité`)+(w10itm == `Datenschutz und Sicherheit`)+(w10itm == `Privacidade e segurança`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `1080,105,0,-210` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `270,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `0,315,0,-420` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `270,420,0,-525` : `0,945,0,-1050`)))) : (((w10itm == `Windows Update`) > 0) ? ((w10winW == `` ? 1366 : w10winW) >= 1349 ? `0,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 1079 ? `540,210,0,-315` : ((w10winW == `` ? 1366 : w10winW) >= 809 ? `270,315,0,-420` : ((w10winW == `` ? 1366 : w10winW) >= 539 ? `0,525,0,-630` : `0,1050,0,-1155`)))) : skip()))))))))))) : (((w10itm == `System`)+(w10itm == `Sistema`)+(w10itm == `Système`) > 0) ? (w10homeH == `` ? `12,95,0,0` : (w10homeH < 1 ? `12,95,0,0` : `12,47,0,0`)) : skip())}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : `3,0,4,0`}}'
+      - 'MinHeight={{($W10M_home) > 0 ? 0 : 48}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates > Grid#PresenterContentRootGrid > Grid#ContentGrid > Border#IconColumn > Viewbox#IconBox > Border > ContentPresenter#Icon
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `0` : `10,0,0,0`}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > * > ContentPresenter#ContentPresenter
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? `10,7,0,0` : `7,-1,8,0`}}'
+      - FontSize=15
+  - target: '// W10+ barra laterale: la voce scelta non ha fondo, resta solo il segno di accento 4x24. Sotto il puntatore la riga intera si scurisce del 10 %, premuta del 20 %'
+    styles:
+      - // Nella home il passaggio e la pressione sulle voci restano quelli originali
+  - target: SystemSettings.View.SettingsNavigationViewItem > Grid#NVIRootGrid > Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter#NavigationViewItemPresenter > Grid#LayoutRoot@PointerStates
+    styles:
+      - Background@Selected=Transparent
+      - Background@PointerOverSelected:=<SolidColorBrush Color="{ThemeResource SystemListLowColor}" />
+      - Background@PressedSelected:=<SolidColorBrush Color="{ThemeResource SystemListMediumColor}" />
+      - 'Background@PointerOver:={{($W10M_home) > 0 ? skip() : `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemListLowColor}"/>`}}'
+      - 'Background@Pressed:={{($W10M_home) > 0 ? skip() : `<SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Color="{ThemeResource SystemListMediumColor}"/>`}}'
+  - target: SystemSettings.View.SettingsNavigationViewItem > * > Rectangle#SelectionIndicator
+    styles:
+      - Width=4
+      - Height=24
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - target: '// W10+ casella di ricerca della barra laterale (solo fuori dalla home): 288x32 con il bordo di 2 px compreso, come in Windows 10'
+    styles:
+      - '// Prima era 266x45. Testo di 15 px con i margini interni di Windows 10 (10,3,6,5). Il bordo lo disegna la griglia interna (regola originale): quello della casella qui vale 0 per non contarlo due volte'
+  - target: SystemSettings.View.RootPage > Grid#RootPageGrid > Grid#RootCommandSearchGrid
+    styles:
+      - 'Margin={{($W10M_home) > 0 ? 0 : 16}},{{($W10M_home) > 0 ? $W10H_SEARCH : 96}},0,0'
+      - 'Width={{($W10M_home) > 0 ? 336 : 288}}'
+  - target: Grid#RootCommandSearchGrid > SystemSettings.View.SettingsAutoSuggestCommandSearchBox#CommandSearchBox
+    styles:
+      - 'Width={{($W10M_home) > 0 ? 336 : 288}}'
+  - target: TextBox#CommandSearchTextBox
+    styles:
+      - 'Height={{($W10M_home) > 0 ? skip() : 32}}'
+      - 'BorderThickness={{($W10M_home) > 0 ? 2 : 0}}'
+      - 'Padding={{($W10M_home) > 0 ? skip() : `10,3,6,5`}}'
+      - 'FontSize={{($W10M_home) > 0 ? skip() : 15}}'
+  - target: TextBox#CommandSearchTextBox > Grid > Button#DeleteButton > Grid#ButtonLayoutGrid
+    styles:
+      - 'MinHeight={{($W10M_home) > 0 ? 32 : 28}}'
+      - 'Margin={{($W10M_home) > 0 ? skip() : `0`}}'
+  - target: '// W10+ risultati della ricerca: 12 px fra icona e testo (una regola generale sulle icone li aveva tolti e il testo toccava l''icona)'
+    styles:
+      - '// Tre bersagli alternativi: quelli che non esistono non fanno nulla'
+  - target: ListView#SuggestionsList > * > Grid > FontIcon, Border#SuggestionsContainer > * > Grid > FontIcon, Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > FontIcon
+    styles:
+      - Margin=0,1,12,0
+  - target: '// W10+ pagine: contenuto allineato a sinistra subito dopo la barra laterale, come in Windows 10, invece che al centro della finestra'
+    styles:
+      - // Colonna larga al massimo 700; il titolo segue lo stesso bordo. Nella home non cambia nulla. Se titolo e contenuto non risultano allineati, togliere le due voci che seguono
+  - target: ContentControl#HeaderContent > ContentPresenter > SystemSettings.View.AlignableContentControl#PermanentNavViewHeaderAlignControl
+    styles:
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? skip() : `Left`}}'
+  - target: ScrollViewer#SettingsPageHostPanel > * > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl, ScrollViewer#SettingsPageHostPanel > * > ItemsControl > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl, SystemSettings.View.CategoryPage > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid > SystemSettings.View.AlignableContentControl
+    styles:
+      - 'HorizontalAlignment={{($W10M_home) > 0 ? skip() : `Left`}}'
+      - 'Width={{($W10M_home) > 0 ? skip() : min(700, max(280, (w10winW == `` ? 1366 : w10winW) - (w10navMode == `w10c` ? 48 : (w10navMode == `w10m` ? 0 : 320)) - 96))}}'
+  - target: '// W10+ pagine: titoli delle sezioni a 20 px come in Windows 10 (Windows 11: 14)'
+    styles:
+      - // Vale per il primo testo di ogni gruppo della pagina (non per i gruppi annidati) e per le intestazioni degli elenchi
+  - target: ScrollViewer#SettingsPageHostPanel > * > ItemsControl > ItemsPresenter > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > TextBlock[1], ScrollViewer#SettingsPageHostPanel > * > ItemsControl > SystemSettings.View.SpacingStackPanel > ContentPresenter > SystemSettings.View.AlignableContentControl > SystemSettings.View.SpacingStackPanel > TextBlock[1]
+    styles:
+      - FontSize=20
+  - target: ItemsStackPanel > ListViewHeaderItem
+    styles:
+      - FontSize=20
+      - FontWeight=Normal
+  - target: '// W10+ pagine: il corpo di Windows 10 è 15 px (Windows 11: 14). Titoli delle voci e testo dei comandi'
+    styles:
+      - '// Da togliere se le righe sembrano troppo grandi: le due voci che seguono'
+  - target: Frame#PermanentNavRootFrame > * > ContentPresenter#TitleContent > TextBlock, Frame#PermanentNavRootFrame > * > ContentPresenter#TitleContent > * > TextBlock
+    styles:
+      - FontSize=15
+  - target: Frame#PermanentNavRootFrame > * > ComboBox, Frame#PermanentNavRootFrame > * > SystemSettings.View.StableComboBox, Frame#PermanentNavRootFrame > * > ToggleSwitch, Frame#PermanentNavRootFrame > * > CheckBox, Frame#PermanentNavRootFrame > * > RadioButton, Frame#PermanentNavRootFrame > * > Button, Frame#PermanentNavRootFrame > * > HyperlinkButton, Frame#PermanentNavRootFrame > * > TextBox, Frame#PermanentNavRootFrame > * > PasswordBox
+    styles:
+      - FontSize=15
+  - target: '// W10+ link: colore di accento pieno (tema scuro: accento chiaro) invece dell''accento scuro di Windows 11'
+    styles:
+      - '// Due bersagli per sicurezza: il comando e il suo contenuto'
+  - target: Frame#PermanentNavRootFrame > * > HyperlinkButton
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Link}" />
+  - target: Frame#PermanentNavRootFrame > * > HyperlinkButton > ContentPresenter#ContentPresenter
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource Win10Link}" />
+  - target: '// W10+ caselle di testo nelle pagine: bordo di 2 px'
+    styles:
+      - '// Con il fuoco il bordo diventa di accento: risorse TextControl in fondo'
+  - target: Frame#PermanentNavRootFrame > * > TextBox, Frame#PermanentNavRootFrame > * > PasswordBox, Frame#PermanentNavRootFrame > * > SystemSettings.View.WatermarkTextBox
+    styles:
+      - BorderThickness=2
+  - target: '// W10+ interruttore: acceso con l''accento pieno (era la tonalità scura di Windows 11), più chiaro al passaggio, grigio mentre si preme'
+    styles:
+      - '// Spento: anello e pomello neri all''80 %, neri pieni al passaggio. I colori seguono il tema chiaro o scuro'
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobBounds
+    styles:
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Fill@PointerOver={ThemeResource SystemControlHighlightAltListAccentHighBrush}
+      - Fill@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" />
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#OuterBorder
+    styles:
+      - Stroke:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Stroke@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Stroke@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Stroke@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill=Transparent
+      - Fill@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#SwitchKnob > Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobOff
+    styles:
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Fill@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Fill@Pressed:=<SolidColorBrush Color="{ThemeResource SystemChromeWhiteColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+  - target: Windows.UI.Xaml.Controls.ToggleSwitch > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Grid#SwitchKnob > Windows.UI.Xaml.Controls.Border#SwitchKnobOn
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemChromeWhiteColor}" />
+      - Background@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" />
+  - target: '// W10+ slider: traccia di 2 px, parte piena di accento, cursore 8x24 con raggio 4 (nero al passaggio, grigio premuto)'
+    styles:
+      - '// I bersagli usano i nomi delle parti e non la classe Slider: così valgono anche per lo slider della luminosità, che le regole originali non raggiungono'
+  - target: Grid#SliderContainer > Grid#HorizontalTemplate > Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb
+    styles:
+      - Width=8
+      - Height=24
+  - target: Grid#SliderContainer > Grid#VerticalTemplate > Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb
+    styles:
+      - Width=24
+      - Height=8
+  - target: Grid@CommonStates > Grid#SliderContainer > Grid#HorizontalTemplate > Rectangle#HorizontalTrackRect
+    styles:
+      - Height=2
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemChromeDisabledHighColor}" />
+  - target: Grid@CommonStates > Grid#SliderContainer > Grid#HorizontalTemplate > Rectangle#HorizontalDecreaseRect
+    styles:
+      - Height=2
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemChromeDisabledHighColor}" />
+  - target: Grid@CommonStates > Grid#SliderContainer > Grid#VerticalTemplate > Rectangle#VerticalTrackRect
+    styles:
+      - Width=2
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemChromeDisabledHighColor}" />
+  - target: Grid@CommonStates > Grid#SliderContainer > Grid#VerticalTemplate > Rectangle#VerticalDecreaseRect
+    styles:
+      - Width=2
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemChromeDisabledHighColor}" />
+  - target: Grid@CommonStates > Grid#SliderContainer > Grid#HorizontalTemplate > Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Border, Grid@CommonStates > Grid#SliderContainer > Grid#VerticalTemplate > Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb > Border
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Background@PointerOver={ThemeResource SystemControlHighlightChromeAltLowBrush}
+      - Background@Pressed={ThemeResource SystemControlHighlightChromeHighBrush}
+      - Background@Disabled:=<SolidColorBrush Color="{ThemeResource SystemChromeDisabledHighColor}" />
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Border, Windows.UI.Xaml.Controls.Primitives.Thumb#VerticalThumb > Border
+    styles:
+      - CornerRadius=4
+  - target: '// W10+ casella di controllo: bordo nero all''80 % da vuota, piena di accento da spuntata, bordo nero al passaggio, grigia mentre si preme'
+    styles:
+      - // Segno di spunta bianco; la seconda voce ha due bersagli perché il segno cambia tipo secondo la versione
+  - target: CheckBox > Grid#RootGrid@CombinedStates > Grid > Rectangle#NormalRectangle
+    styles:
+      - Stroke:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Stroke@UncheckedPointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Stroke@UncheckedPressed=Transparent
+      - Stroke@UncheckedDisabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Stroke@CheckedNormal:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Stroke@CheckedPointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Stroke@CheckedPressed=Transparent
+      - Stroke@CheckedDisabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Stroke@IndeterminateNormal:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Stroke@IndeterminatePointerOver:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Stroke@IndeterminatePressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Stroke@IndeterminateDisabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill=Transparent
+      - Fill@UncheckedPressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Fill@CheckedNormal:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Fill@CheckedPointerOver:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Fill@CheckedPressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+  - target: CheckBox > Grid#RootGrid@CombinedStates > Grid > Microsoft.UI.Xaml.Controls.AnimatedIcon#CheckGlyph, CheckBox > Grid#RootGrid@CombinedStates > Grid > FontIcon#CheckGlyph
+    styles:
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemChromeWhiteColor}" />
+      - Foreground@CheckedDisabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Foreground@IndeterminateNormal:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Foreground@IndeterminatePointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Foreground@IndeterminatePressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Foreground@IndeterminateDisabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+  - target: '// W10+ opzione: anello nero all''80 % da vuota; da scelta anello di accento da 2 px con il punto scuro da 10 px'
+    styles:
+      - '// Prima: cerchio pieno con punto bianco da 8 px'
+  - target: RadioButton > Grid#RootGrid@CommonStates > Grid > Windows.UI.Xaml.Shapes.Ellipse#OuterEllipse
+    styles:
+      - Stroke:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Stroke@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Stroke@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Stroke@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill=Transparent
+  - target: RadioButton > Grid#RootGrid@CommonStates > Grid > Windows.UI.Xaml.Shapes.Ellipse#CheckOuterEllipse
+    styles:
+      - Stroke:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+      - Stroke@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Stroke@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Fill=Transparent
+      - StrokeThickness=2
+  - target: RadioButton > Grid#RootGrid@CommonStates > Grid > Windows.UI.Xaml.Shapes.Ellipse#CheckGlyph
+    styles:
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumHighColor}" />
+      - Fill@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Fill@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - Fill@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumLowColor}" />
+      - Stroke=Transparent
+      - MaxWidth=10
+      - MaxHeight=10
+  - target: RadioButton > Grid#RootGrid > Grid > Border#PressedCheckGlyph
+    styles:
+      - Visibility=Collapsed
+  - target: '// W10+ casella combinata: bordo più scuro al passaggio, fondo grigio mentre si preme e da disattivata'
+    styles:
+      - // Stessi valori di partenza della regola originale; qui si aggiungono gli stati
+  - target: SystemSettings.View.StableComboBox > Grid#LayoutRoot@CommonStates > Border#Background, ComboBox > Grid#LayoutRoot@CommonStates > Border#Background
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource Win10Page}" />
+      - Background@Pressed:=<SolidColorBrush Color="{ThemeResource SystemListMediumColor}" />
+      - Background@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10SearchBorder}" />
+      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}" />
+      - BorderBrush@Disabled:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" />
+  - target: '// W10+ elenco della casella combinata: pieno, senza la pillola di Windows 11, voci larghe quanto l''elenco'
+    styles:
+      - // Voce scelta con il fondo di accento trasparente, le altre grigie al passaggio
+  - target: ComboBoxItem > Grid#LayoutRoot@CommonStates
+    styles:
+      - Margin=0
+      - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemListLowColor}" />
+      - Background@Pressed:=<SolidColorBrush Color="{ThemeResource SystemListMediumColor}" />
+      - Background@Selected={ThemeResource SystemControlHighlightListAccentLowBrush}
+      - Background@SelectedUnfocused={ThemeResource SystemControlHighlightListAccentLowBrush}
+      - Background@SelectedPointerOver={ThemeResource SystemControlHighlightListAccentMediumBrush}
+      - Background@SelectedPressed={ThemeResource SystemControlHighlightListAccentHighBrush}
+  - target: ComboBoxItem > Grid#LayoutRoot > Rectangle#Pill, ComboBox > Grid#LayoutRoot > Rectangle#Pill, SystemSettings.View.StableComboBox > Grid#LayoutRoot > Rectangle#Pill
+    styles:
+      - Visibility=Collapsed
+  - target: Canvas > Border#PopupBorder
+    styles:
+      - Background={ThemeResource SystemControlBackgroundChromeMediumLowBrush}
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10TransientBorder}" />
+      - BorderThickness=1
+  - target: '// W10+ descrizioni comando, riquadri a comparsa e menu: fondo pieno e bordo sottile al posto dell''acrilico'
+    styles:
+      - // Colori di Windows 10 19H1 e successivi
+  - target: ToolTip
+    styles:
+      - Background={ThemeResource SystemControlBackgroundChromeMediumLowBrush}
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10TransientBorder}" />
+      - Foreground={ThemeResource SystemControlForegroundBaseHighBrush}
+      - BorderThickness=1
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter, Windows.UI.Xaml.Controls.MenuFlyoutPresenter
+    styles:
+      - Background={ThemeResource SystemControlBackgroundChromeMediumLowBrush}
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource Win10TransientBorder}" />
+      - BorderThickness=1
 themeResourceVariables:
   - Win10Pane@Light=#E6E6E6
   - Win10Pane@Dark=#1F1F1F
@@ -1365,3 +1654,422 @@ themeResourceVariables:
   - Win10AcrylicFallback@Dark:=<Color>#FF1F1F1F</Color>
   - ControlCornerRadius=0
   - OverlayCornerRadius=0
+  - '// ==== W10+ (aggiunte): risorse, secondo livello. Stessi valori di Windows 10 delle regole sugli elementi, per tema chiaro e scuro ===='
+  - // Servono ai comandi che le regole non raggiungono. Valgono per i comandi creati dopo il caricamento della mod
+  - // W10+ colori usati dalle regole aggiunte, nella stessa forma dei colori Win10 originali (le regole li leggono come colore di un pennello)
+  - Win10Link@Light={ThemeResource SystemAccentColor}
+  - Win10Link@Dark={ThemeResource SystemAccentColorLight2}
+  - Win10TransientBorder@Light=#24000000
+  - Win10TransientBorder@Dark=#5C000000
+  - '// W10+ caratteri: riserva a livello di risorse per ciò che le regole non raggiungono. Icone: prima Windows 10, poi Windows 11'
+  - ContentControlThemeFontFamily@Light:=<FontFamily>Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons</FontFamily>
+  - ContentControlThemeFontFamily@Dark:=<FontFamily>Segoe UI, Segoe MDL2 Assets, Segoe Fluent Icons</FontFamily>
+  - SymbolThemeFontFamily@Light:=<FontFamily>Segoe MDL2 Assets, Segoe Fluent Icons</FontFamily>
+  - SymbolThemeFontFamily@Dark:=<FontFamily>Segoe MDL2 Assets, Segoe Fluent Icons</FontFamily>
+  - '// W10+ caselle di testo: con il fuoco il bordo è di accento e resta di 2 px (la casella di ricerca ha il suo bordo e non cambia)'
+  - TextControlBorderBrushFocused@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - TextControlBorderBrushFocused@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - TextControlElevationBorderFocusedBrush@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - TextControlElevationBorderFocusedBrush@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - TextControlBorderThemeThicknessFocused@Light:=<Thickness>2</Thickness>
+  - TextControlBorderThemeThicknessFocused@Dark:=<Thickness>2</Thickness>
+  - // W10+ misure di Windows 10 come riserva delle regole sugli elementi
+  - ComboBoxBorderThemeThickness@Light:=<Thickness>2</Thickness>
+  - ComboBoxBorderThemeThickness@Dark:=<Thickness>2</Thickness>
+  - RadioButtonBorderThemeThickness@Light:=<x:Double>2</x:Double>
+  - RadioButtonBorderThemeThickness@Dark:=<x:Double>2</x:Double>
+  - ToggleSwitchOuterBorderStrokeThickness@Light:=<x:Double>2</x:Double>
+  - ToggleSwitchOuterBorderStrokeThickness@Dark:=<x:Double>2</x:Double>
+  - SliderTrackThemeHeight@Light:=<x:Double>2</x:Double>
+  - SliderTrackThemeHeight@Dark:=<x:Double>2</x:Double>
+  - SliderThumbCornerRadius@Light:=<CornerRadius>4</CornerRadius>
+  - SliderThumbCornerRadius@Dark:=<CornerRadius>4</CornerRadius>
+  - NavigationViewSelectionIndicatorWidth@Light:=<x:Double>4</x:Double>
+  - NavigationViewSelectionIndicatorWidth@Dark:=<x:Double>4</x:Double>
+  - NavigationViewSelectionIndicatorHeight@Light:=<x:Double>24</x:Double>
+  - NavigationViewSelectionIndicatorHeight@Dark:=<x:Double>24</x:Double>
+  - NavigationViewSelectionIndicatorRadius@Light:=<x:Double>0</x:Double>
+  - NavigationViewSelectionIndicatorRadius@Dark:=<x:Double>0</x:Double>
+  - '// W10+ interruttori: acceso con l''accento pieno e il pomello bianco, grigio mentre si preme, spento e disattivato'
+  - ToggleSwitchContentForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ToggleSwitchContentForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchContentForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ToggleSwitchContentForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ToggleSwitchFillOff@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ToggleSwitchFillOff@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - ToggleSwitchFillOffPointerOver@Light:=<Color>#00FFFFFF</Color>
+  - ToggleSwitchFillOffPointerOver@Dark:=<Color>#00FFFFFF</Color>
+  - ToggleSwitchFillOffPressed@Light:=<Color>#99000000</Color>
+  - ToggleSwitchFillOffPressed@Dark:=<Color>#99FFFFFF</Color>
+  - ToggleSwitchStrokeOffPointerOver@Light:=<Color>#FF000000</Color>
+  - ToggleSwitchStrokeOffPointerOver@Dark:=<Color>#FFFFFFFF</Color>
+  - ToggleSwitchStrokeOffPressed@Light:=<Color>#CC000000</Color>
+  - ToggleSwitchStrokeOffPressed@Dark:=<Color>#CCFFFFFF</Color>
+  - ToggleSwitchStrokeOffDisabled@Light:=<Color>#66000000</Color>
+  - ToggleSwitchStrokeOffDisabled@Dark:=<Color>#66FFFFFF</Color>
+  - ToggleSwitchFillOn@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - ToggleSwitchFillOn@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - ToggleSwitchFillOnPointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+  - ToggleSwitchFillOnPointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.9" />
+  - ToggleSwitchFillOnPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - ToggleSwitchFillOnPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - ToggleSwitchFillOnDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ToggleSwitchFillOnDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ToggleSwitchStrokeOnPointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+  - ToggleSwitchStrokeOnPointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.9" />
+  - ToggleSwitchStrokeOnPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - ToggleSwitchStrokeOnPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - ToggleSwitchStrokeOnDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ToggleSwitchStrokeOnDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ToggleSwitchKnobFillOffPressed@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOffPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOffDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ToggleSwitchKnobFillOffDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ToggleSwitchKnobFillOn@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOn@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOnPointerOver@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOnPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOnPressed@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOnPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToggleSwitchKnobFillOnDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ToggleSwitchKnobFillOnDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - '// W10+ slider: traccia, parte piena e cursore in tutti gli stati'
+  - SliderThumbBackground@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderThumbBackground@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderThumbBackgroundPointerOver@Light:=<SolidColorBrush Color="#FF171717" />
+  - SliderThumbBackgroundPointerOver@Dark:=<SolidColorBrush Color="#FFF2F2F2" />
+  - SliderThumbBackgroundPressed@Light:=<SolidColorBrush Color="#FFCCCCCC" />
+  - SliderThumbBackgroundPressed@Dark:=<SolidColorBrush Color="#FF767676" />
+  - SliderThumbBackgroundDisabled@Light:=<SolidColorBrush Color="#FFCCCCCC" />
+  - SliderThumbBackgroundDisabled@Dark:=<SolidColorBrush Color="#FF333333" />
+  - SliderTrackFill@Light:=<SolidColorBrush Color="#66000000" />
+  - SliderTrackFill@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - SliderTrackFillPointerOver@Light:=<SolidColorBrush Color="#99000000" />
+  - SliderTrackFillPointerOver@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - SliderTrackFillPressed@Light:=<SolidColorBrush Color="#66000000" />
+  - SliderTrackFillPressed@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - SliderTrackFillDisabled@Light:=<SolidColorBrush Color="#FFCCCCCC" />
+  - SliderTrackFillDisabled@Dark:=<SolidColorBrush Color="#FF333333" />
+  - SliderTrackValueFill@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFill@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFillPointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFillPointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFillPressed@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFillPressed@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderTrackValueFillDisabled@Light:=<SolidColorBrush Color="#FFCCCCCC" />
+  - SliderTrackValueFillDisabled@Dark:=<SolidColorBrush Color="#FF333333" />
+  - SliderThumbBorderBrush@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - SliderThumbBorderBrush@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - SliderOuterThumbBackground@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - SliderOuterThumbBackground@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - '// W10+ caselle combinate: bordo e fondo al passaggio, premuto e disattivato; elenco e voci'
+  - ComboBoxItemForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForegroundPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxItemForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxItemForegroundSelected@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForegroundSelected@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundSelectedPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForegroundSelectedPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundSelectedPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxItemForegroundSelectedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxItemForegroundSelectedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxItemForegroundSelectedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxItemBackgroundPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - ComboBoxItemBackgroundPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ComboBoxItemBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - ComboBoxItemBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - ComboBoxItemBackgroundSelected@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.4" />
+  - ComboBoxItemBackgroundSelected@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.6" />
+  - ComboBoxItemBackgroundSelectedPressed@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+  - ComboBoxItemBackgroundSelectedPressed@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.9" />
+  - ComboBoxItemBackgroundSelectedPointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.6" />
+  - ComboBoxItemBackgroundSelectedPointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
+  - ComboBoxItemBackgroundSelectedDisabled@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ComboBoxItemBackgroundSelectedDisabled@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - ComboBoxBackground@Light:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxBackground@Dark:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxBackgroundPointerOver@Light:=<SolidColorBrush Color="#99FFFFFF" />
+  - ComboBoxBackgroundPointerOver@Dark:=<SolidColorBrush Color="#99000000" />
+  - ComboBoxBackgroundPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - ComboBoxBackgroundPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ComboBoxBackgroundDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ComboBoxBackgroundDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ComboBoxForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxForegroundPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxForegroundPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxBorderBrush@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxBorderBrush@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxBorderBrushPointerOver@Light:=<SolidColorBrush Color="#99000000" />
+  - ComboBoxBorderBrushPointerOver@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - ComboBoxBorderBrushPressed@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxBorderBrushPressed@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxBorderBrushDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ComboBoxBorderBrushDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ComboBoxDropDownGlyphForeground@Light:=<SolidColorBrush Color="#CC000000" />
+  - ComboBoxDropDownGlyphForeground@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - ComboBoxDropDownGlyphForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - ComboBoxDropDownGlyphForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ComboBoxDropDownForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ComboBoxDropDownForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ComboBoxDropDownBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - ComboBoxDropDownBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - ComboBoxDropDownBackgroundPointerPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - ComboBoxDropDownBackgroundPointerPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ComboBoxDropDownBackground@Light:=<SolidColorBrush Color="#FFF2F2F2" />
+  - ComboBoxDropDownBackground@Dark:=<SolidColorBrush Color="#FF2B2B2B" />
+  - ComboBoxDropDownBorderBrush@Light:=<SolidColorBrush Color="#24000000" />
+  - ComboBoxDropDownBorderBrush@Dark:=<SolidColorBrush Color="#5C000000" />
+  - ComboBoxItemPillFillBrush@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ComboBoxItemPillFillBrush@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - '// W10+ menu: voci al passaggio e premute, fondo e bordo'
+  - MenuFlyoutItemBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - MenuFlyoutItemBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - MenuFlyoutItemBackgroundPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - MenuFlyoutItemBackgroundPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - MenuFlyoutSubItemBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - MenuFlyoutSubItemBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - MenuFlyoutSubItemBackgroundPressed@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+  - MenuFlyoutSubItemBackgroundPressed@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.9" />
+  - MenuFlyoutSubItemBackgroundSubMenuOpened@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.4" />
+  - MenuFlyoutSubItemBackgroundSubMenuOpened@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.6" />
+  - MenuFlyoutPresenterBackground@Light:=<SolidColorBrush Color="#FFF2F2F2" />
+  - MenuFlyoutPresenterBackground@Dark:=<SolidColorBrush Color="#FF2B2B2B" />
+  - MenuFlyoutPresenterBorderBrush@Light:=<SolidColorBrush Color="#24000000" />
+  - MenuFlyoutPresenterBorderBrush@Dark:=<SolidColorBrush Color="#5C000000" />
+  - '// W10+ caselle di controllo: bordo scuro da spente, accento piene, bordo nero al passaggio, grigie premute'
+  - CheckBoxCheckBackgroundStrokeUnchecked@Light:=<SolidColorBrush Color="#CC000000" />
+  - CheckBoxCheckBackgroundStrokeUnchecked@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - CheckBoxCheckBackgroundStrokeUncheckedPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxCheckBackgroundStrokeUncheckedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckBackgroundStrokeUncheckedPressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeUncheckedPressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeUncheckedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxCheckBackgroundStrokeUncheckedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeChecked@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeChecked@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeCheckedPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxCheckBackgroundStrokeCheckedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckBackgroundStrokeCheckedPressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeCheckedPressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeCheckedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxCheckBackgroundStrokeCheckedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeIndeterminate@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeIndeterminate@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeIndeterminatePointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeIndeterminatePointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundStrokeIndeterminatePressed@Light:=<SolidColorBrush Color="#99000000" />
+  - CheckBoxCheckBackgroundStrokeIndeterminatePressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - CheckBoxCheckBackgroundStrokeIndeterminateDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxCheckBackgroundStrokeIndeterminateDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxCheckBackgroundFillUnchecked@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillUnchecked@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillUncheckedPointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillUncheckedPointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillUncheckedPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - CheckBoxCheckBackgroundFillUncheckedPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - CheckBoxCheckBackgroundFillChecked@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundFillChecked@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundFillCheckedPointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundFillCheckedPointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - CheckBoxCheckBackgroundFillCheckedPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - CheckBoxCheckBackgroundFillCheckedPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - CheckBoxCheckBackgroundFillCheckedDisabled@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillCheckedDisabled@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminate@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminate@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminatePointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminatePointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminatePressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminatePressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminateDisabled@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckBackgroundFillIndeterminateDisabled@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - CheckBoxCheckGlyphForegroundChecked@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundChecked@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundCheckedPointerOver@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundCheckedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundCheckedPressed@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundCheckedPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundCheckedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxCheckGlyphForegroundCheckedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxCheckGlyphForegroundIndeterminate@Light:=<SolidColorBrush Color="#CC000000" />
+  - CheckBoxCheckGlyphForegroundIndeterminate@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - CheckBoxCheckGlyphForegroundIndeterminatePointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxCheckGlyphForegroundIndeterminatePointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxCheckGlyphForegroundIndeterminatePressed@Light:=<SolidColorBrush Color="#99000000" />
+  - CheckBoxCheckGlyphForegroundIndeterminatePressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - CheckBoxCheckGlyphForegroundIndeterminateDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxCheckGlyphForegroundIndeterminateDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxForegroundUnchecked@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundUnchecked@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundUncheckedPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundUncheckedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundUncheckedPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundUncheckedPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundUncheckedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxForegroundUncheckedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxForegroundChecked@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundChecked@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundCheckedPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundCheckedPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundCheckedPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundCheckedPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundCheckedDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxForegroundCheckedDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - CheckBoxForegroundIndeterminate@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundIndeterminate@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundIndeterminatePointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundIndeterminatePointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundIndeterminatePressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - CheckBoxForegroundIndeterminatePressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - CheckBoxForegroundIndeterminateDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - CheckBoxForegroundIndeterminateDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - '// W10+ opzioni: anello scuro, anello di accento con punto scuro da scelte'
+  - RadioButtonForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - RadioButtonForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - RadioButtonForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - RadioButtonForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - RadioButtonForegroundPressed@Light:=<SolidColorBrush Color="#FF000000" />
+  - RadioButtonForegroundPressed@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - RadioButtonForegroundDisabled@Light:=<SolidColorBrush Color="#66000000" />
+  - RadioButtonForegroundDisabled@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - RadioButtonOuterEllipseStroke@Light:=<SolidColorBrush Color="#CC000000" />
+  - RadioButtonOuterEllipseStroke@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - RadioButtonOuterEllipseStrokePointerOver@Light:=<Color>#FF000000</Color>
+  - RadioButtonOuterEllipseStrokePointerOver@Dark:=<Color>#FFFFFFFF</Color>
+  - RadioButtonOuterEllipseStrokePressed@Light:=<Color>#99000000</Color>
+  - RadioButtonOuterEllipseStrokePressed@Dark:=<Color>#99FFFFFF</Color>
+  - RadioButtonOuterEllipseStrokeDisabled@Light:=<Color>#66000000</Color>
+  - RadioButtonOuterEllipseStrokeDisabled@Dark:=<Color>#66FFFFFF</Color>
+  - RadioButtonOuterEllipseFill@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseFill@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseFillPointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseFillPointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseFillPressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseFillPressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedStroke@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - RadioButtonOuterEllipseCheckedStroke@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - RadioButtonOuterEllipseCheckedStrokePointerOver@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - RadioButtonOuterEllipseCheckedStrokePointerOver@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - RadioButtonOuterEllipseCheckedStrokePressed@Light:=<SolidColorBrush Color="#99000000" />
+  - RadioButtonOuterEllipseCheckedStrokePressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - RadioButtonOuterEllipseCheckedStrokeDisabled@Light:=<Color>#66000000</Color>
+  - RadioButtonOuterEllipseCheckedStrokeDisabled@Dark:=<Color>#66FFFFFF</Color>
+  - RadioButtonOuterEllipseCheckedFill@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFill@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFillPointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFillPointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFillPressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFillPressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonOuterEllipseCheckedFillDisabled@Light:=<Color>#00FFFFFF</Color>
+  - RadioButtonOuterEllipseCheckedFillDisabled@Dark:=<Color>#00FFFFFF</Color>
+  - RadioButtonCheckGlyphFill@Light:=<SolidColorBrush Color="#CC000000" />
+  - RadioButtonCheckGlyphFill@Dark:=<SolidColorBrush Color="#CCFFFFFF" />
+  - RadioButtonCheckGlyphFillPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - RadioButtonCheckGlyphFillPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - RadioButtonCheckGlyphFillPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - RadioButtonCheckGlyphFillPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - RadioButtonCheckGlyphFillDisabled@Light:=<Color>#66000000</Color>
+  - RadioButtonCheckGlyphFillDisabled@Dark:=<Color>#66FFFFFF</Color>
+  - RadioButtonCheckGlyphStroke@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStroke@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokePointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokePointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokePressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokePressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeDisabled@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeDisabled@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeChecked@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeChecked@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedPointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedPointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedPressed@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedPressed@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedDisabled@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - RadioButtonCheckGlyphStrokeCheckedDisabled@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - // W10+ descrizioni comando, riquadri a comparsa, finestre di dialogo
+  - ToolTipBackgroundBrush@Light:=<SolidColorBrush Color="#FFF2F2F2" />
+  - ToolTipBackgroundBrush@Dark:=<SolidColorBrush Color="#FF2B2B2B" />
+  - ToolTipBackground@Light:=<SolidColorBrush Color="#FFF2F2F2" />
+  - ToolTipBackground@Dark:=<SolidColorBrush Color="#FF2B2B2B" />
+  - ToolTipBorderBrush@Light:=<SolidColorBrush Color="#24000000" />
+  - ToolTipBorderBrush@Dark:=<SolidColorBrush Color="#5C000000" />
+  - ToolTipForegroundBrush@Light:=<SolidColorBrush Color="#FF000000" />
+  - ToolTipForegroundBrush@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ToolTipForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ToolTipForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - FlyoutPresenterBackground@Light:=<SolidColorBrush Color="#FFF2F2F2" />
+  - FlyoutPresenterBackground@Dark:=<SolidColorBrush Color="#FF2B2B2B" />
+  - FlyoutBorderThemeBrush@Light:=<SolidColorBrush Color="#24000000" />
+  - FlyoutBorderThemeBrush@Dark:=<SolidColorBrush Color="#5C000000" />
+  - ContentDialogTopOverlay@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ContentDialogTopOverlay@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - ContentDialogSeparatorBorderBrush@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ContentDialogSeparatorBorderBrush@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - ContentDialogBorderBrush@Light:=<SolidColorBrush Color="#33000000" />
+  - ContentDialogBorderBrush@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ContentDialogBackground@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ContentDialogBackground@Dark:=<SolidColorBrush Color="#FF000000" />
+  - ContentDialogForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ContentDialogForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - '// W10+ elenco a sinistra: segno della pagina scelta di accento pieno, nessun fondo sulla voce scelta'
+  - NavigationViewSelectionIndicatorForeground@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - NavigationViewSelectionIndicatorForeground@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - NavigationViewItemBackgroundSelected@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - NavigationViewItemBackgroundSelected@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - NavigationViewItemBackgroundSelectedPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - NavigationViewItemBackgroundSelectedPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - NavigationViewItemBackgroundSelectedPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - NavigationViewItemBackgroundSelectedPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - // W10+ righe degli elenchi al passaggio e premute
+  - ListViewItemBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - ListViewItemBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - ListViewItemBackgroundPressed@Light:=<SolidColorBrush Color="#33000000" />
+  - ListViewItemBackgroundPressed@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - '// W10+ barre di scorrimento: grigi di Windows 10'
+  - ScrollBarThumbFill@Light:=<SolidColorBrush Color="#FF7A7A7A" />
+  - ScrollBarThumbFill@Dark:=<SolidColorBrush Color="#FF858585" />
+  - ScrollBarThumbFillPointerOver@Light:=<SolidColorBrush Color="#66000000" />
+  - ScrollBarThumbFillPointerOver@Dark:=<SolidColorBrush Color="#66FFFFFF" />
+  - ScrollBarThumbFillPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - ScrollBarThumbFillPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - ScrollBarThumbBackground@Light:=<SolidColorBrush Color="#33000000" />
+  - ScrollBarThumbBackground@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ScrollBarPanningThumbBackground@Light:=<SolidColorBrush Color="#FF7A7A7A" />
+  - ScrollBarPanningThumbBackground@Dark:=<SolidColorBrush Color="#FF858585" />
+  - ScrollBarButtonArrowForeground@Light:=<SolidColorBrush Color="#FF000000" />
+  - ScrollBarButtonArrowForeground@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ScrollBarButtonArrowForegroundPointerOver@Light:=<SolidColorBrush Color="#FF000000" />
+  - ScrollBarButtonArrowForegroundPointerOver@Dark:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ScrollBarButtonArrowForegroundPressed@Light:=<SolidColorBrush Color="#FFFFFFFF" />
+  - ScrollBarButtonArrowForegroundPressed@Dark:=<SolidColorBrush Color="#FF000000" />
+  - ScrollBarButtonArrowForegroundDisabled@Light:=<SolidColorBrush Color="#33000000" />
+  - ScrollBarButtonArrowForegroundDisabled@Dark:=<SolidColorBrush Color="#33FFFFFF" />
+  - ScrollBarButtonBackgroundPointerOver@Light:=<SolidColorBrush Color="#19000000" />
+  - ScrollBarButtonBackgroundPointerOver@Dark:=<SolidColorBrush Color="#19FFFFFF" />
+  - ScrollBarButtonBackgroundPressed@Light:=<SolidColorBrush Color="#99000000" />
+  - ScrollBarButtonBackgroundPressed@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - ScrollBarTrackFill@Light:=<SolidColorBrush Color="#FFE6E6E6" />
+  - ScrollBarTrackFill@Dark:=<SolidColorBrush Color="#FF1F1F1F" />
+  - ScrollBarTrackFillPointerOver@Light:=<SolidColorBrush Color="#FFE6E6E6" />
+  - ScrollBarTrackFillPointerOver@Dark:=<SolidColorBrush Color="#FF1F1F1F" />
+  - ScrollBarTrackStroke@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ScrollBarTrackStroke@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - ScrollBarTrackStrokePointerOver@Light:=<SolidColorBrush Color="#00FFFFFF" />
+  - ScrollBarTrackStrokePointerOver@Dark:=<SolidColorBrush Color="#00FFFFFF" />
+  - // W10+ link nel testo
+  - HyperlinkForeground@Light:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+  - HyperlinkForeground@Dark:=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
+  - HyperlinkForegroundPointerOver@Light:=<SolidColorBrush Color="#99000000" />
+  - HyperlinkForegroundPointerOver@Dark:=<SolidColorBrush Color="#99FFFFFF" />
+  - HyperlinkForegroundPressed@Light:=<SolidColorBrush Color="#66000000" />
+  - HyperlinkForegroundPressed@Dark:=<SolidColorBrush Color="#66FFFFFF" />
